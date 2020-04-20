@@ -1,3 +1,38 @@
+@font-face {
+  font-family: "Rubik-medium";
+  src: url("../assets/fonts/rubik/Rubik-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Gilroy-bold";
+  src: url("../assets/fonts/Gilroy/Gilroy-Bold.otf");
+}
+
+@font-face {
+  font-family: "Gilroy-extra-bold";
+  src: url("../assets/fonts/Gilroy/Gilroy-Extrabold.otf");
+}
+
+@font-face {
+  font-family: "Gilroy-light";
+  src: url("../assets/fonts/Gilroy/Gilroy-Light.otf");
+}
+
+@font-face {
+  font-family: "Gilroy-regular";
+  src: url("../assets/fonts/Gilroy/Gilroy-Regular.otf");
+}
+
+@font-face {
+  font-family: "Gilroy-semi-bold";
+  src: url("../assets/fonts/Gilroy/Gilroy-Semibold.otf");
+}
+
+@font-face {
+  font-family: "Gilroy-medium";
+  src: url("../assets/fonts/Gilroy/Gilroy-Medium.otf");
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -7,6 +42,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  font-family: 'Gilroy-light', Arial, sans-serif;
 }
 
 h1 {
@@ -37,6 +73,36 @@ ul {
 @font-face {
   font-family: "Rubik-medium";
   src: url("../assets/fonts/rubik/Rubik-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Gilroy-bold";
+  src: url("../assets/fonts/Gilroy/Gilroy-Bold.otf");
+}
+
+@font-face {
+  font-family: "Gilroy-extra-bold";
+  src: url("../assets/fonts/Gilroy/Gilroy-Extrabold.otf");
+}
+
+@font-face {
+  font-family: "Gilroy-light";
+  src: url("../assets/fonts/Gilroy/Gilroy-Light.otf");
+}
+
+@font-face {
+  font-family: "Gilroy-regular";
+  src: url("../assets/fonts/Gilroy/Gilroy-Regular.otf");
+}
+
+@font-face {
+  font-family: "Gilroy-semi-bold";
+  src: url("../assets/fonts/Gilroy/Gilroy-Semibold.otf");
+}
+
+@font-face {
+  font-family: "Gilroy-medium";
+  src: url("../assets/fonts/Gilroy/Gilroy-Medium.otf");
 }
 
 @media (max-width: 1024px) {
@@ -560,6 +626,7 @@ ul {
   font-size: 24px;
   font-weight: bold;
   color: #fff;
+  font-family: 'Gilroy-bold';
 }
 
 #aside-nav section h3 a {
@@ -757,6 +824,7 @@ nav.main-nav ul li a::after {
   font-weight: bold;
   position: relative;
   z-index: 2;
+  font-family: "Gilroy-bold";
 }
 
 .branches-menu {
@@ -891,6 +959,7 @@ ul {
   font-weight: bold;
   color: #159ee3;
   padding: 0px 0px 30px;
+  font-family: "Gilroy-bold";
 }
 
 .branch-address .text {
@@ -902,13 +971,26 @@ ul {
 
 .branch-address .text p {
   padding: 0px 0px 8px;
+  margin: 0;
 }
 
-.branch-address .text strong.address {
+.branch-address .text .address {
   display: block;
   color: black;
   padding: 0px 0px 0px 24px;
   background: url("../assets/images/pin_black_icon.svg") 0px 50% no-repeat;
+  font-family: "Gilroy-semi-bold";
+}
+
+.bus {
+  display: block;
+  padding: 0 0 0 24px;
+  color: #000;
+  background: url("../assets/images/bus_black_icon.svg") no-repeat 0 50%;
+}
+
+.branch-address .text strong, b {
+  font-family: "Gilroy-semi-bold";
 }
 
 .map-frame {

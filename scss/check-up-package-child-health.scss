@@ -199,6 +199,7 @@ animation-direction: alternate;
       font-size: 24px;
       font-weight: bold;
       color: #fff;
+      font-family: 'Gilroy-bold';
       a {
         color: #fff;
         text-decoration: none;
@@ -350,6 +351,7 @@ nav.main-nav ul li a {
     position: relative;
     z-index: 2;
     padding: 0px 0px 60px;
+    font-family: "Gilroy-bold";
 }
 .go-back {
     padding: 10px 0 0;
@@ -409,6 +411,7 @@ nav.main-nav ul li a {
     font-weight: normal;
     color: rgb(64, 64, 64);
     padding: 0px 0px 40px;
+    font-family: "Gilroy-regular";
   }
   div{
     width: calc(100% + 25px);
@@ -422,6 +425,8 @@ nav.main-nav ul li a {
     position: relative;
     margin: 0px 0px 0px 25px;
     P{
+      margin-top: 9px;
+      font-family: "Gilroy-bold";
       a{
         color: rgb(0, 119, 179);
       text-decoration: none;

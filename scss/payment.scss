@@ -203,6 +203,7 @@ animation-direction: alternate;
       font-size: 24px;
       font-weight: bold;
       color: #fff;
+      font-family: 'Gilroy-bold';
       a {
         color: #fff;
         text-decoration: none;
@@ -431,6 +432,7 @@ nav.main-nav ul li a {
     font-weight: bold;
     position: relative;
     z-index: 2;
+    font-family: "Gilroy-bold";
   }
 }
 .payment-form {
@@ -466,14 +468,31 @@ nav.main-nav ul li a {
   color: #000;
   font-size: 16px;
   font-family: "Gilroy";
-
+ 
   border-radius: 4px;
 
   animation-duration: 0.2s;
-
+  outline: none;
+  &:focus{
+    box-shadow: rgba(21, 158, 227, 0.2) 0px 0px 8px 0px;
+    border-color: rgb(21, 158, 227);
+  }
+  &::placeholder{
+    font-family: "Gilroy-regular";
+  }
   transition: all 0.2s linear;
+ 
 }
+
+
+
 .payment-form .input input {
+  outline: none;
+  &:focus{
+    box-shadow: rgba(21, 158, 227, 0.2) 0px 0px 8px 0px;
+    border-color: rgb(21, 158, 227);
+  }
+  
   display: block;
   width: 100%;
   height: 58px;
@@ -488,6 +507,9 @@ nav.main-nav ul li a {
   animation-duration: 0.2s;
 
   transition: all 0.2s linear;
+    &::placeholder{
+      font-family: "Gilroy-light";
+    }
 }
 
 .payment-form .price {
@@ -508,6 +530,7 @@ nav.main-nav ul li a {
   font-size: 36px;
   font-weight: bold;
   color: #7c7c7c;
+  font-family: "Gilroy-bold";
 }
 .payment-form .price strong {
   padding: 0 8px 0 0;
@@ -534,6 +557,7 @@ nav.main-nav ul li a {
   animation-duration: 0.2s;
 
   transition: all 0.2s linear;
+  font-family: "Gilroy-bold";
 }
 
 
@@ -571,7 +595,8 @@ input[type=number] {
   width: 100%;
     bottom: 0 !important;
     position: absolute !important;
-    height: 35px;
+    height: 55px;
+
 }
 .footer-container {
   margin: 0 auto;

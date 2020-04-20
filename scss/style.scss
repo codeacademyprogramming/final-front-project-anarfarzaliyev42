@@ -342,7 +342,7 @@ opacity: 0;
         opacity: 0;
         top: -120px;
         transition: all 0.3s linear;
-
+        font-family: 'Gilroy-regular';
         color: #fff;
         span {
           color: #fff;
@@ -399,7 +399,7 @@ opacity: 0;
         margin-left: -12px;
         padding: 0 0 0 110px;
         position: absolute;
-        font-family: "Gilroy";
+        font-family: "Gilroy-regular";
         font-size: 16px;
         font-weight: 500;
         transition: all 0.3s linear;
@@ -441,6 +441,7 @@ opacity: 0;
     color: #fff;
     transition: all 0.2s linear;
     opacity: 0;
+    font-family: "Gilroy-extra-bold";
   }
 }
 .active-bullet {
@@ -496,6 +497,7 @@ opacity: 0;
       font-size: 24px;
       font-weight: bold;
       color: #fff;
+      font-family: 'Gilroy-bold';
       a {
         color: #fff;
         text-decoration: none;

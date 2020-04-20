@@ -1,3 +1,38 @@
+@font-face {
+  font-family: "Rubik-medium";
+  src: url("../assets/fonts/rubik/Rubik-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Gilroy-bold";
+  src: url("../assets/fonts/Gilroy/Gilroy-Bold.otf");
+}
+
+@font-face {
+  font-family: "Gilroy-extra-bold";
+  src: url("../assets/fonts/Gilroy/Gilroy-Extrabold.otf");
+}
+
+@font-face {
+  font-family: "Gilroy-light";
+  src: url("../assets/fonts/Gilroy/Gilroy-Light.otf");
+}
+
+@font-face {
+  font-family: "Gilroy-regular";
+  src: url("../assets/fonts/Gilroy/Gilroy-Regular.otf");
+}
+
+@font-face {
+  font-family: "Gilroy-semi-bold";
+  src: url("../assets/fonts/Gilroy/Gilroy-Semibold.otf");
+}
+
+@font-face {
+  font-family: "Gilroy-medium";
+  src: url("../assets/fonts/Gilroy/Gilroy-Medium.otf");
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -7,6 +42,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  font-family: 'Gilroy-light', Arial, sans-serif;
 }
 
 h1 {
@@ -37,6 +73,36 @@ ul {
 @font-face {
   font-family: "Rubik-medium";
   src: url("../assets/fonts/rubik/Rubik-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Gilroy-bold";
+  src: url("../assets/fonts/Gilroy/Gilroy-Bold.otf");
+}
+
+@font-face {
+  font-family: "Gilroy-extra-bold";
+  src: url("../assets/fonts/Gilroy/Gilroy-Extrabold.otf");
+}
+
+@font-face {
+  font-family: "Gilroy-light";
+  src: url("../assets/fonts/Gilroy/Gilroy-Light.otf");
+}
+
+@font-face {
+  font-family: "Gilroy-regular";
+  src: url("../assets/fonts/Gilroy/Gilroy-Regular.otf");
+}
+
+@font-face {
+  font-family: "Gilroy-semi-bold";
+  src: url("../assets/fonts/Gilroy/Gilroy-Semibold.otf");
+}
+
+@font-face {
+  font-family: "Gilroy-medium";
+  src: url("../assets/fonts/Gilroy/Gilroy-Medium.otf");
 }
 
 @media (max-width: 1024px) {
@@ -553,6 +619,7 @@ ul {
   font-size: 24px;
   font-weight: bold;
   color: #fff;
+  font-family: "Gilroy-bold";
 }
 
 #aside-nav section h3 a {
@@ -590,7 +657,7 @@ ul {
 
 #aside-nav .aside-nav-container .up-sections::-webkit-scrollbar {
   width: 5px;
-  background: #0FC8F0;
+  background: #0fc8f0;
 }
 
 #aside-nav .aside-nav-container .up-sections::-webkit-scrollbar-thumb {
@@ -704,6 +771,7 @@ nav.main-nav ul li a::after {
   position: relative;
   z-index: 2;
   padding: 0px 0px 60px;
+  font-family: "Gilroy-bold";
 }
 
 .article-tabs {
@@ -742,6 +810,10 @@ nav.main-nav ul li a::after {
   border-color: gainsboro gainsboro gainsboro;
   text-decoration: none;
   background: white;
+}
+
+.article-tabs a:hover {
+  background: #D6F1FF;
 }
 
 .vacancy-list .list ul li a {
@@ -816,6 +888,7 @@ nav.main-nav ul li a::after {
 }
 
 .about-vacancy header h3 {
+  font-family: "Gilroy-bold";
   padding: 17px 0 0;
   font-size: 24px;
   font-weight: bold;
@@ -831,6 +904,7 @@ nav.main-nav ul li a::after {
   font-weight: bold;
   color: #fff;
   text-decoration: none;
+  font-family: "Gilroy-bold";
   background-image: linear-gradient(250deg, #0fc8f0, #149de2);
   -webkit-box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.1);
@@ -847,10 +921,12 @@ nav.main-nav ul li a::after {
 
 .about-vacancy .text p {
   padding: 0px 0px 20px;
+  font-family: "Gilroy-light";
 }
 
 .about-vacancy .text p strong {
   font-weight: bold;
+  font-family: "Gilroy-semi-bold";
 }
 
 #footer {

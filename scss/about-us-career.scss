@@ -207,6 +207,7 @@ animation-direction: alternate;
       font-size: 24px;
       font-weight: bold;
       color: #fff;
+      font-family: 'Gilroy-bold';
       a {
         color: #fff;
         text-decoration: none;
@@ -336,7 +337,17 @@ nav.main-nav ul li a {
 .left-nav-active {
   background-image: linear-gradient(225deg, #0fc8f0, #149de2) !important;
 }
-
+.text-container{
+  .text{
+    font-size: 16px;
+    line-height: 1.75;
+    color: #404040;
+    p{
+      font-family: 'Gilroy-light';
+      padding: 0 0 25px;
+    }
+  }
+}
 .main-content > div {
   max-width: 980px;
   position: relative;
@@ -350,6 +361,7 @@ nav.main-nav ul li a {
     position: relative;
     z-index: 2;
     padding: 0px 0px 60px;
+    font-family: 'Gilroy-bold';
   }
 }
 .article-tabs {
@@ -386,6 +398,9 @@ nav.main-nav ul li a {
 
     text-decoration: none;
     background: rgb(255, 255, 255);
+    &:hover{
+      background: #D6F1FF;
+    }
 }
 
 
@@ -397,6 +412,7 @@ nav.main-nav ul li a {
     font-weight: bold;
     color: #159ee3;
     text-align: center;
+    font-family: "Gilroy-bold";
     }
 }
 .vacancy-list .list ul {
@@ -432,6 +448,7 @@ nav.main-nav ul li a {
         line-height: 24px;
         font-weight: 500;
         position: relative;
+        font-family: 'Gilroy-regular';
     }
 }
 .vacancy-list .list ul li {

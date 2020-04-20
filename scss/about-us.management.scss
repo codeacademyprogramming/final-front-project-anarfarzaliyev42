@@ -202,6 +202,7 @@ animation-direction: alternate;
       font-size: 24px;
       font-weight: bold;
       color: #fff;
+      font-family: 'Gilroy-bold';
       a {
         color: #fff;
         text-decoration: none;
@@ -345,6 +346,7 @@ nav.main-nav ul li a {
     position: relative;
     z-index: 2;
     padding: 0px 0px 60px;
+    font-family: "Gilroy-bold";
   }
 }
 .article-tabs {
@@ -382,6 +384,9 @@ nav.main-nav ul li a {
     border-left: none;
     text-decoration: none;
     background: rgb(255, 255, 255);
+    &:hover{
+      background: #D6F1FF;
+    }
 }
 .text-container .image {
   float: left;
@@ -395,6 +400,11 @@ nav.main-nav ul li a {
   font-size: 16px;
   line-height: 1.75;
   color: rgb(64, 64, 64);
+  p{
+    strong{
+      font-family: "Gilroy-bold";
+    }
+  }
 }
 .text-container .text p {
   padding: 0px 0px 25px;

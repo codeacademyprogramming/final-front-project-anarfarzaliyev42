@@ -1,3 +1,38 @@
+@font-face {
+  font-family: "Rubik-medium";
+  src: url("../assets/fonts/rubik/Rubik-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Gilroy-bold";
+  src: url("../assets/fonts/Gilroy/Gilroy-Bold.otf");
+}
+
+@font-face {
+  font-family: "Gilroy-extra-bold";
+  src: url("../assets/fonts/Gilroy/Gilroy-Extrabold.otf");
+}
+
+@font-face {
+  font-family: "Gilroy-light";
+  src: url("../assets/fonts/Gilroy/Gilroy-Light.otf");
+}
+
+@font-face {
+  font-family: "Gilroy-regular";
+  src: url("../assets/fonts/Gilroy/Gilroy-Regular.otf");
+}
+
+@font-face {
+  font-family: "Gilroy-semi-bold";
+  src: url("../assets/fonts/Gilroy/Gilroy-Semibold.otf");
+}
+
+@font-face {
+  font-family: "Gilroy-medium";
+  src: url("../assets/fonts/Gilroy/Gilroy-Medium.otf");
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -7,6 +42,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  font-family: 'Gilroy-light', Arial, sans-serif;
 }
 
 h1 {
@@ -37,6 +73,36 @@ ul {
 @font-face {
   font-family: "Rubik-medium";
   src: url("../assets/fonts/rubik/Rubik-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Gilroy-bold";
+  src: url("../assets/fonts/Gilroy/Gilroy-Bold.otf");
+}
+
+@font-face {
+  font-family: "Gilroy-extra-bold";
+  src: url("../assets/fonts/Gilroy/Gilroy-Extrabold.otf");
+}
+
+@font-face {
+  font-family: "Gilroy-light";
+  src: url("../assets/fonts/Gilroy/Gilroy-Light.otf");
+}
+
+@font-face {
+  font-family: "Gilroy-regular";
+  src: url("../assets/fonts/Gilroy/Gilroy-Regular.otf");
+}
+
+@font-face {
+  font-family: "Gilroy-semi-bold";
+  src: url("../assets/fonts/Gilroy/Gilroy-Semibold.otf");
+}
+
+@font-face {
+  font-family: "Gilroy-medium";
+  src: url("../assets/fonts/Gilroy/Gilroy-Medium.otf");
 }
 
 @media (max-width: 1024px) {
@@ -589,6 +655,7 @@ ul {
   font-size: 24px;
   font-weight: bold;
   color: #fff;
+  font-family: 'Gilroy-bold';
 }
 
 #aside-nav section h3 a {
@@ -738,6 +805,7 @@ nav.main-nav ul li a::after {
   font-weight: bold;
   position: relative;
   z-index: 2;
+  font-family: "Gilroy-bold";
 }
 
 .main-container .text {
@@ -813,6 +881,10 @@ area {
   position: relative;
 }
 
+.search-image-header .text p {
+  font-family: "Gilroy-light";
+}
+
 .search-input {
   display: none;
 }
@@ -829,6 +901,26 @@ area {
   border-radius: 5px;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
+}
+
+.search-input input::-webkit-input-placeholder {
+  color: #c2c2c2;
+  font-family: "Gilroy-light";
+}
+
+.search-input input:-ms-input-placeholder {
+  color: #c2c2c2;
+  font-family: "Gilroy-light";
+}
+
+.search-input input::-ms-input-placeholder {
+  color: #c2c2c2;
+  font-family: "Gilroy-light";
+}
+
+.search-input input::placeholder {
+  color: #c2c2c2;
+  font-family: "Gilroy-light";
 }
 
 .data-tags {
@@ -894,10 +986,10 @@ area {
 
 .symptoms-sugg-container article h4 {
   font-size: 17px;
-  font-weight: 500;
   line-height: 1.41;
   color: #404040;
   padding: 0px 0px 15px;
+  font-family: "Gilroy-regular";
 }
 
 .symptoms-sugg-container article h4 a {

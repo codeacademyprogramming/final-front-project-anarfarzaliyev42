@@ -1,7 +1,7 @@
 @import "reset";
 @import "fonts";
 @import "media-career-nurse";
-@import 'animation';
+@import "animation";
 #header {
   height: 146px;
   position: relative;
@@ -113,7 +113,6 @@
         }
       }
     }
-    
   }
 }
 
@@ -128,10 +127,10 @@
   clip-path: ellipse(100% 50% at 100% 50%);
 
   animation-name: rightCircleEffect;
-animation-timing-function: linear;
-animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
   animation-duration: 1s;
-animation-direction: alternate;   
+  animation-direction: alternate;
 
   transition: all 0.9s linear;
 }
@@ -150,24 +149,23 @@ animation-direction: alternate;
 
   transition: all 0.9s linear;
 }
-.main-bg  {
-  div{
-   div{
-    width: 330px;
-    height: 100%;
-    background: #d5edfa;
-    position: fixed;
-    top: -0%;
-    right: -220px;
-  
-    clip-path: ellipse(100% 50% at 100% 50%);
-  
-    animation-duration: 0.9s;
-  
-    transition: all 0.9s linear;
-   }
+.main-bg {
+  div {
+    div {
+      width: 330px;
+      height: 100%;
+      background: #d5edfa;
+      position: fixed;
+      top: -0%;
+      right: -220px;
+
+      clip-path: ellipse(100% 50% at 100% 50%);
+
+      animation-duration: 0.9s;
+
+      transition: all 0.9s linear;
+    }
   }
-  
 }
 
 #aside-nav {
@@ -194,7 +192,6 @@ animation-direction: alternate;
       li {
         padding: 0 0 14px;
         a {
-        
           font-size: 17px;
           font-weight: normal;
           color: #fff;
@@ -207,11 +204,12 @@ animation-direction: alternate;
       font-size: 24px;
       font-weight: bold;
       color: #fff;
+      font-family: "Gilroy-bold";
       a {
         color: #fff;
         text-decoration: none;
         position: relative;
-        &:hover{
+        &:hover {
           &::before {
             width: 100%;
           }
@@ -240,11 +238,10 @@ animation-direction: alternate;
       position: relative;
       &::-webkit-scrollbar {
         width: 5px;
-      background: #0FC8F0;
-   
-      };
+        background: #0fc8f0;
+      }
       &::-webkit-scrollbar-thumb {
-        background: #fff; 
+        background: #fff;
       }
     }
   }
@@ -267,16 +264,15 @@ nav.main-nav {
 }
 nav.main-nav ul li {
   padding: 0 0 20px;
- 
 }
 nav.main-nav ul li a {
   display: block;
   width: 70px;
   height: 70px;
-  &:hover{
-   &::before{
-     opacity: 1;
-   }
+  &:hover {
+    &::before {
+      opacity: 1;
+    }
   }
   background-image: linear-gradient(225deg, #dcdcdc, #dcdcdc);
   position: relative;
@@ -306,7 +302,7 @@ nav.main-nav ul li a {
     display: block;
     width: 100%;
     height: 100%;
-    
+
     background-image: linear-gradient(225deg, #0fc8f0, #149de2);
     position: absolute;
     top: 0;
@@ -350,6 +346,7 @@ nav.main-nav ul li a {
     position: relative;
     z-index: 2;
     padding: 0px 0px 60px;
+    font-family: "Gilroy-bold";
   }
 }
 .article-tabs {
@@ -367,42 +364,43 @@ nav.main-nav ul li a {
   border-radius: 5px 0px 0px 5px;
 }
 .article-tabs a:first-child {
-    border-left: 1px solid rgb(220, 220, 220);
-    border-radius: 5px 0px 0px 5px;
+  border-left: 1px solid rgb(220, 220, 220);
+  border-radius: 5px 0px 0px 5px;
 }
 
 .article-tabs a {
-    display: inline-block;
-    width: 25%;
-    height: 58px;
-    font-size: 18px;
-    line-height: 56px;
-    white-space: nowrap;
-    color: rgb(124, 124, 124);
-    vertical-align: top;
-    border-width: 1px 1px 1px;
-    border-style: solid solid solid none;
-    border-color: rgb(220, 220, 220) rgb(220, 220, 220) rgb(220, 220, 220);
+  display: inline-block;
+  width: 25%;
+  height: 58px;
+  font-size: 18px;
+  line-height: 56px;
+  white-space: nowrap;
+  color: rgb(124, 124, 124);
+  vertical-align: top;
+  border-width: 1px 1px 1px;
+  border-style: solid solid solid none;
+  border-color: rgb(220, 220, 220) rgb(220, 220, 220) rgb(220, 220, 220);
 
-    text-decoration: none;
-    background: rgb(255, 255, 255);
+  text-decoration: none;
+  background: rgb(255, 255, 255);
+  &:hover{
+    background: #D6F1FF;
+  }
 }
-
-
 
 .vacancy-list .list ul li a {
-    display: block;
-    text-decoration: none;
-    color: #0077b3;
-    height: 100%;
+  display: block;
+  text-decoration: none;
+  color: #0077b3;
+  height: 100%;
 }
 .go-back {
-    position: absolute;
-    top: 0px;
-    z-index: 2;
-    padding: 10px 0px 0px;
-    a{
-        display: inline-block;
+  position: absolute;
+  top: 0px;
+  z-index: 2;
+  padding: 10px 0px 0px;
+  a {
+    display: inline-block;
     font-size: 17px;
     font-weight: 500;
     color: rgb(0, 119, 179);
@@ -411,83 +409,80 @@ nav.main-nav ul li a {
     padding: 0px 0px 0px 25px;
     text-decoration: none;
     transition: all 0.2s linear 0s;
-    &:hover{
-      &::before{
+    &:hover {
+      &::before {
         left: -5px;
       }
     }
-    &::before{
-        content: "";
-    display: block;
-    width: 18px;
-    height: 100%;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    animation-duration: 0.2s;
-    background: url('../assets/images/arrow_back_blue.svg') 0px 50% no-repeat;
-    transition: all 0.2s linear 0s;
+    &::before {
+      content: "";
+      display: block;
+      width: 18px;
+      height: 100%;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      animation-duration: 0.2s;
+      background: url("../assets/images/arrow_back_blue.svg") 0px 50% no-repeat;
+      transition: all 0.2s linear 0s;
     }
-    }
+  }
 }
 .cover-image-container .image {
-    padding: 0px 0px 30px;
-    img{
-        display: block;
+  padding: 0px 0px 30px;
+  img {
+    display: block;
     width: 100%;
     border-radius: 8px;
-    }
+  }
 }
 .about-vacancy {
-    padding: 10px 0px 0px;
-    header{
-        display: flex;
-        justify-content: space-between;
-        padding: 0px 0px 20px;
-        h3{
-   
-       
-            padding: 17px 0 0;
-            font-size: 24px;
-            font-weight: bold;
-            color: #159ee3;
-        }
-        .link {
-
-           a{
-            display: inline-block;
-            height: 58px;
-            padding: 0 30px;
-            line-height: 58px;
-            font-size: 18px;
-            font-weight: bold;
-            color: #fff;
-            text-decoration: none;
-            background-image: -webkit-linear-gradient(160deg, #0fc8f0, #149de2);
-            background-image: -o-linear-gradient(160deg, #0fc8f0, #149de2);
-            background-image: -webkit-linear-gradient(200deg, #0fc8f0, #149de2);
-            background-image: -o-linear-gradient(200deg, #0fc8f0, #149de2);
-            background-image: linear-gradient(250deg, #0fc8f0, #149de2);
-    
-            box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.1);
-        
-            border-radius: 5px;
-         
-            transition: all 0.2s linear;
-           }
-        }        
+  padding: 10px 0px 0px;
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 0px 20px;
+    h3 {
+      font-family: "Gilroy-bold";
+      padding: 17px 0 0;
+      font-size: 24px;
+      font-weight: bold;
+      color: #159ee3;
     }
-    .text{
-        font-size: 16px;
+    .link {
+      a {
+        display: inline-block;
+        height: 58px;
+        padding: 0 30px;
+        line-height: 58px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #fff;
+        text-decoration: none;
+        font-family: "Gilroy-bold";
+        background-image: linear-gradient(250deg, #0fc8f0, #149de2);
+
+        box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.1);
+
+        border-radius: 5px;
+
+        transition: all 0.2s linear;
+      }
+    }
+  }
+  .text {
+    font-size: 16px;
     line-height: 1.75;
     color: rgb(64, 64, 64);
-    p{
-        padding: 0px 0px 20px;
-        strong{
-            font-weight: bold;
-        }
+    p {
+      padding: 0px 0px 20px;
+      font-family: "Gilroy-light";
+      strong {
+        font-weight: bold;
+        font-family: "Gilroy-semi-bold";
+      }
     }
-    }
+  }
 }
 #footer {
   width: 100%;
@@ -512,11 +507,11 @@ nav.main-nav ul li a {
   flex-wrap: nowrap;
   align-content: stretch;
   align-items: center;
-  .netty{
-    img{
-      width:95px;
-      height:50px;
-      border:0;
+  .netty {
+    img {
+      width: 95px;
+      height: 50px;
+      border: 0;
     }
   }
   div {

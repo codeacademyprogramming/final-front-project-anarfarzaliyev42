@@ -202,6 +202,7 @@ animation-direction: alternate;
       font-size: 24px;
       font-weight: bold;
       color: #fff;
+      font-family: 'Gilroy-bold';
       a {
         color: #fff;
         text-decoration: none;
@@ -301,8 +302,7 @@ nav.main-nav ul li a {
     display: block;
     width: 100%;
     height: 100%;
-    background-image: -webkit-linear-gradient(225deg, #0fc8f0, #149de2);
-    background-image: -o-linear-gradient(225deg, #0fc8f0, #149de2);
+
     background-image: linear-gradient(225deg, #0fc8f0, #149de2);
     position: absolute;
     top: 0;
@@ -346,6 +346,7 @@ nav.main-nav ul li a {
     font-weight: bold;
     position: relative;
     z-index: 2;
+    font-family: "Gilroy-bold";
 }
 .go-back {
     padding: 10px 0 0;
@@ -417,10 +418,13 @@ nav.main-nav ul li a {
     font-size: 20px;
     font-weight: bold;
     color: #0077b3;
+    font-family: "Gilroy-bold";
+    margin: 0;
 }
 .current-card .info header p {
     font-size: 17px;
     color: #7c7c7c;
+    margin: 0;
 }
 .current-card .info .list ul {
     overflow: hidden;
@@ -433,11 +437,13 @@ nav.main-nav ul li a {
 .current-card .info .list ul li p {
     padding: 0 0 10px;
     font-size: 15px;
+    margin: 0;
     color: #7c7c7c;
 }
 .current-card .info .list ul li strong {
     font-size: 17px;
     color: #404040;
+    font-family: "Gilroy-light";
 }
 .current-card::after {
     content: "";
@@ -452,6 +458,10 @@ nav.main-nav ul li a {
 }
 .text-container .text p {
     padding: 0 0 25px;
+    margin: 0;
+  strong{
+    font-family: "Gilroy-bold";
+  }
 }
 
 .text-container .text::after {
@@ -496,6 +506,7 @@ ul{
     font-weight: bold;
     text-align: center;
     color: #0077b3;
+    font-family: "Gilroy-bold";
 }
 .card-list article p {
     font-size: 17px;

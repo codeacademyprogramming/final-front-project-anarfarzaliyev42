@@ -203,6 +203,7 @@
       font-size: 24px;
       font-weight: bold;
       color: #fff;
+      font-family: 'Gilroy-bold';
       a {
         color: #fff;
         text-decoration: none;
@@ -346,6 +347,7 @@ nav.main-nav ul li a {
         font-weight: bold;
         position: relative;
         z-index: 2;
+        font-family: "Gilroy-bold";
         img{
             display: block;
             position: absolute;
@@ -418,6 +420,9 @@ nav.main-nav ul li a {
         text-decoration: none;
   
         vertical-align: top;
+        &:hover{
+          background: #D6F1FF;
+        }
     }
 }
 .article-tabs-active{
@@ -444,6 +449,12 @@ nav.main-nav ul li a {
 }
 .text-container .text p {
     padding: 0 0 25px;
+    font-family: "Gilroy-regular";
+    color: #404040;
+    strong{
+      font-family: "Gilroy-semi-bold";
+    
+    }
 }
 .text-container .text ul {
     padding: 0 0 25px;
@@ -454,8 +465,8 @@ nav.main-nav ul li a {
     &::before{
         content: "";
         display: block;
-        width: 6px;
-        height: 6px;
+        width: 10px;
+        height: 10px;
         background: #fff;
         border: 2px solid #159ee3;
         position: absolute;
@@ -464,6 +475,7 @@ nav.main-nav ul li a {
   
         border-radius: 50%;
     }
+  
 }
 .text-container .text::after {
     content: "";
