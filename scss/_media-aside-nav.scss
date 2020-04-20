@@ -1,0 +1,23 @@
+@media (max-width: 1024px) {
+
+  #aside-nav{
+    width: 75% !important;
+  }
+}
+@media (max-width: 767px) {
+
+    #aside-nav {
+      width: 65% !important;
+    }
+    #aside-nav  .aside-nav-container {
+      padding: 140px 20px 0 !important;
+    }
+
+}
+@media (max-width: 468px) {
+ 
+    #aside-nav {
+      width: calc(100% - 10px) !important;
+    }
+   
+  }

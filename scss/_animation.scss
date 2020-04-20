@@ -1,0 +1,60 @@
+@keyframes sliderScale{
+   
+    0%{
+        transform: scale(1);
+        
+    }
+    100%{
+        transform: scale(1.2);
+    }
+ 
+}
+@keyframes ringAnime{
+   
+    0%{
+        transform: rotate(13deg);
+        
+    }
+    100%{
+        transform: rotate(-13deg);
+    }
+ 
+}
+@keyframes rightCircleEffect{
+   
+    0%{
+        right:-330px;
+        
+    }
+    100%{
+        right:0px;
+    }
+ 
+}
+@keyframes mainLiAnime{
+   
+    0%{
+        opacity: 0;
+        transform: translateY(-20px);
+    
+        
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+ 
+}
+// @keyframes mainUlAnime{
+   
+//     0%{
+    
+    
+        
+//     }
+//     100%{
+     
+   
+//     }
+ 
+// }

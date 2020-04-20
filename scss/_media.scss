@@ -1,0 +1,140 @@
+@import 'media-aside-nav';
+
+@media (max-width: 1024px) {
+ 
+  #footer {
+   
+    bottom: 0 !important;
+  }
+  .main-right {
+    display: none !important;
+  }
+  .main-bg {
+    display: none !important;
+  }
+  .main-left {
+    width: 100% !important;
+    padding: 0 !important;
+  }
+  #header > div {
+    padding: 20px 20px 0 !important;
+    .phone {
+      padding: 20px 80px 0 0px !important;
+      margin-right: 0 !important;
+      a {
+        color: #159ee3;
+      }
+    }
+    .toggler {
+      right: 20px !important;
+      background: #159ee3;
+      span {
+        em {
+          background: #fff;
+        }
+      }
+    }
+    .phone {
+      span {
+        color: #159ee3;
+      }
+      a::before {
+        background: url("../assets/images/phone_icon_active.svg") no-repeat 0 0 ;
+      }
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .phone {
+    span {
+      color: #fff;
+    }
+    a {
+      color: #fff;
+      &::before{
+        background: url("../assets/images/phone_icon.svg") no-repeat 0 0 ;
+      }
+    }
+  }
+  .toggler {
+    background: #fff;
+    span {
+      em {
+        background: #159ee3;
+      }
+    }
+  }
+}
+@media (max-width: 767px) and (min-width: 480px) {
+ 
+  .footer-container {
+    display: block;
+    text-align: center;
+
+  }
+  #footer {
+
+    height: 60px !important;
+  }
+  .footer-left {
+    padding: 0 0 10px !important;
+    justify-content: space-between !important;
+  }
+  
+}
+@media (max-width: 767px) {
+ 
+  .aside-sections{
+    flex-direction: row;
+    flex-wrap: wrap;
+  
+  }
+  .aside-sections{
+    flex-direction: column !important;
+
+  }
+  .aside-sections{
+  
+    section{
+      width: calc(100% - 10px) !important;
+    }
+  }
+}
+
+@media (max-width: 479px) and (min-width: 240px) {
+  .footer-container {
+    flex-direction: column !important;
+  }
+  .footer-left {
+    flex-direction: column !important;
+  }
+  .footer-right {
+    span {
+      color: rgba(0, 0, 0, 0.3) !important;
+    }
+  }
+  #footer {
+    flex-direction: column !important;
+    height: 90px !important;
+  }
+  .main-left-container li a span {
+    height: 115px !important;
+    margin-bottom: -4px !important;
+  }
+  .main-left-container li {
+    width: 140px !important;
+    height: 140px !important;
+    margin: 6px !important;
+
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.05),
+      0 10px 27px 0 rgba(0, 0, 0, 0.15);
+  }
+  .main-left-container{
+    width: 304px !important;
+    height: 304px !important;
+  }
+  .main-left-container li a strong {
+    font-size: 18px !important;
+    font-weight: 500 !important;
+  }
+}
