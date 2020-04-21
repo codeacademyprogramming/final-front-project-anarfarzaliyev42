@@ -1015,7 +1015,7 @@ area {
   width: 100%;
   bottom: 0 !important;
   position: absolute !important;
-  height: 35px;
+  height: 55px;
 }
 
 .footer-container {
@@ -1055,6 +1055,7 @@ area {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
 }
 
 .footer-left .netty img {

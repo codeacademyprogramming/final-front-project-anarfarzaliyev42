@@ -62,7 +62,12 @@
   }
 }
 @media (max-width: 767px) and (min-width: 480px) {
-  
+  .polyclinic-grid figure.long {
+    width: calc(100% - 20px) !important;
+}
+.polyclinic-grid figure {
+    width: calc(50% - 20px) !important;
+}
   
   .footer-container {
     display: block;
@@ -76,6 +81,9 @@
   
 }
 @media (max-width: 767px) {
+  .doctors-grid figure {
+    width: calc(50% - 25px) !important;
+}
     .open-menu-select{
         display: block !important;
     }
@@ -124,7 +132,9 @@
    
 
 }
-  
+.doctors-grid figure {
+  width: calc(100% - 25px) !important;
+}
   nav.main-nav {
     display: none;
     width: 100%;
@@ -181,4 +191,23 @@
         .payment-form{
         padding: 0 !important;
     }
+    .polyclinic-grid figure {
+      width: calc(100% - 20px) !important;
+      max-width: 240px !important;
+      float: none !important;
+      margin: 0 auto 20px !important;
+  }
+
+}
+@media (max-width: 1023px) and (min-width: 768px){
+  .polyclinic-grid figure {
+      width: calc(33% - 20px) !important;
+  }
+  .polyclinic-grid figure.long {
+    width: calc(66.5% - 20px) !important;
+  }
+  .doctors-grid figure {
+    width: calc(33% - 25px) !important;
+}
+  
 }

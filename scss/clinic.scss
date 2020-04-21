@@ -188,11 +188,7 @@
     padding: 0px 0px 60px;
     font-family: "Gilroy-bold";
 }
-.polyclinic-grid {
-    width: calc(100% + 20px);
-    margin: 0px 0px 0px -20px;
-   
-}
+
 // @mixin grid($column,$margin) {
 //   float: left;
 //   width: ((100% - (($column - 1) * $margin)) / $column);
@@ -200,6 +196,11 @@
 //   margin-bottom: $margin;
  
 // }
+.polyclinic-grid {
+  width: calc(100% + 20px);
+  margin: 0px 0px 0px -20px;
+ 
+}
 .polyclinic-grid figure {
     width: 200px;
     height: 142px;
@@ -510,7 +511,7 @@ nav.main-nav ul li a {
   width: 100%;
   bottom: 0 !important;
   position: absolute !important;
-  height: 35px;
+  height: 55px;
 }
 .footer-container {
   margin: 0 auto;
@@ -529,6 +530,7 @@ nav.main-nav ul li a {
   flex-wrap: nowrap;
   align-content: stretch;
   align-items: center;
+  text-align: center;
   .netty{
     img{
       width:95px;

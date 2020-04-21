@@ -842,7 +842,7 @@ ul {
   width: 100%;
   position: fixed;
   bottom: 0;
-  height: 60px;
+  height: 55px;
 }
 
 .footer-container {
@@ -882,6 +882,7 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
 }
 
 .footer-left .netty img {

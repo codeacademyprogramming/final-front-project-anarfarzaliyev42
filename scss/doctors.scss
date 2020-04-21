@@ -436,7 +436,7 @@ nav.main-nav ul li a {
   width: 100%;
   bottom: 0 !important;
   position: absolute !important;
-  height: 35px;
+  height: 55px;
 }
 .footer-container {
   margin: 0 auto;
@@ -455,6 +455,7 @@ nav.main-nav ul li a {
   flex-wrap: nowrap;
   align-content: stretch;
   align-items: center;
+  text-align: center;
   .netty{
     img{
       width:95px;

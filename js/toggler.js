@@ -6,6 +6,7 @@ $(function () {
           'overflow-y':'hidden',
 
         });
+
         $(".toggler").addClass("toggler-bg");
         $("header").addClass("aside-active");
         $(".phone a").addClass("phone-a");

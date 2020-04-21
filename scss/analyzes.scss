@@ -364,7 +364,7 @@
   width: 100%;
   position: fixed;
   bottom: 0;
-  height: 60px;
+  height: 55px;
 }
 .footer-container {
   margin: 0 auto;
@@ -383,6 +383,7 @@
   flex-wrap: nowrap;
   align-content: stretch;
   align-items: center;
+  text-align: center;
   .netty {
     img {
       width: 95px;

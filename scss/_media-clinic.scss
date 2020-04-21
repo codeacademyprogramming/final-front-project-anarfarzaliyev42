@@ -141,10 +141,11 @@
     .polyclinic-grid figure {
         width: calc(33% - 20px) !important;
     }
-    .main-content > div {
-        max-width: 1920px !important;
-    }
     .polyclinic-grid figure.long {
       width: calc(66.5% - 20px) !important;
     }
+    .main-content > div {
+        max-width: 1920px !important;
+    }
+    
 }

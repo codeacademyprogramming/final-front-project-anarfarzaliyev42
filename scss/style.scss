@@ -286,7 +286,7 @@ opacity: 0;
           animation-duration: 0.2s;
           background: rgb(15, 200, 240);
           border-radius: 0px 0px 0px 90%;
-          transition: all 0.2s linear 0s;
+          transition: all 0.5s linear 0s;
         }
         display: block;
         width: 100%;
@@ -311,6 +311,7 @@ opacity: 0;
           font-size: 20px;
           font-weight: bold;
           padding: 0px 28px;
+          font-family: "Gilroy-bold";
         }
       }
     }
@@ -373,12 +374,12 @@ opacity: 0;
   max-width: 1440px;
   margin: 0 auto;
   position: relative;
-  margin-top: 60px;
+  margin-top: 114px;
   .right-bottom-container {
     width: 100%;
     margin: 17px 0;
     display: flex;
-    padding-top: 60px;
+
     .bullets {
       div {
         cursor: pointer;
@@ -497,7 +498,7 @@ opacity: 0;
       font-size: 24px;
       font-weight: bold;
       color: #fff;
-      font-family: 'Gilroy-bold';
+        font-family: 'Gilroy-bold';
       a {
         color: #fff;
         text-decoration: none;
@@ -569,6 +570,7 @@ opacity: 0;
   flex-wrap: nowrap;
   align-content: stretch;
   align-items: center;
+  text-align: center;
   .netty {
     img {
       width: 95px;

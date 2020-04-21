@@ -775,7 +775,7 @@ nav.main-nav ul li a::after {
 .article-tabs a.active {
   color: white;
   border-color: #159ee3;
-  background: #159ee3;
+  background: #159ee3 !important;
 }
 
 .article-tabs a:first-child {
@@ -875,7 +875,7 @@ nav.main-nav ul li a::after {
   width: 100%;
   bottom: 0 !important;
   position: absolute !important;
-  height: 35px;
+  height: 55px;
 }
 
 .footer-container {
@@ -915,6 +915,7 @@ nav.main-nav ul li a::after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
 }
 
 .footer-left .netty img {

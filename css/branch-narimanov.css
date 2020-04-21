@@ -178,6 +178,12 @@ ul {
 }
 
 @media (max-width: 767px) and (min-width: 480px) {
+  .polyclinic-grid figure.long {
+    width: calc(100% - 20px) !important;
+  }
+  .polyclinic-grid figure {
+    width: calc(50% - 20px) !important;
+  }
   .footer-container {
     display: block;
     text-align: center;
@@ -191,6 +197,9 @@ ul {
 }
 
 @media (max-width: 767px) {
+  .doctors-grid figure {
+    width: calc(50% - 25px) !important;
+  }
   .open-menu-select {
     display: block !important;
   }
@@ -239,6 +248,9 @@ ul {
   .main-content > div > h2 {
     font-size: 23px !important;
     padding: 9px 0px 30px 26px !important;
+  }
+  .doctors-grid figure {
+    width: calc(100% - 25px) !important;
   }
   nav.main-nav {
     display: none;
@@ -297,6 +309,24 @@ ul {
   }
   .payment-form {
     padding: 0 !important;
+  }
+  .polyclinic-grid figure {
+    width: calc(100% - 20px) !important;
+    max-width: 240px !important;
+    float: none !important;
+    margin: 0 auto 20px !important;
+  }
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+  .polyclinic-grid figure {
+    width: calc(33% - 20px) !important;
+  }
+  .polyclinic-grid figure.long {
+    width: calc(66.5% - 20px) !important;
+  }
+  .doctors-grid figure {
+    width: calc(33% - 25px) !important;
   }
 }
 
@@ -626,7 +656,7 @@ ul {
   font-size: 24px;
   font-weight: bold;
   color: #fff;
-  font-family: 'Gilroy-bold';
+  font-family: "Gilroy-bold";
 }
 
 #aside-nav section h3 a {
@@ -664,7 +694,7 @@ ul {
 
 #aside-nav .aside-nav-container .up-sections::-webkit-scrollbar {
   width: 5px;
-  background: #0FC8F0;
+  background: #0fc8f0;
 }
 
 #aside-nav .aside-nav-container .up-sections::-webkit-scrollbar-thumb {
@@ -897,7 +927,7 @@ ul {
   padding: 0 30px 0 20px;
   border: 1px solid #dcdcdc;
   font-size: 18px;
-  font-family: 'Gilroy';
+  font-family: "Gilroy";
   color: #7c7c7c;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -989,7 +1019,8 @@ ul {
   background: url("../assets/images/bus_black_icon.svg") no-repeat 0 50%;
 }
 
-.branch-address .text strong, b {
+.branch-address .text strong,
+b {
   font-family: "Gilroy-semi-bold";
 }
 
@@ -1002,11 +1033,215 @@ ul {
   width: 100%;
 }
 
+.polyclinic-grid {
+  width: calc(100% + 20px);
+  margin: 0px 0px 0px -20px;
+}
+
+.polyclinic-grid figure {
+  width: 208px;
+  height: 142px;
+  float: left;
+  margin: 0px 0px 20px 20px;
+}
+
+.polyclinic-grid figure a {
+  display: block;
+  height: 142px;
+  color: white;
+  text-align: center;
+  position: relative;
+  -webkit-animation-duration: 0.2s;
+          animation-duration: 0.2s;
+  text-decoration: none;
+  background: #159ee3;
+  overflow: hidden;
+  border-radius: 8px;
+  -webkit-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+}
+
+.polyclinic-grid figure a strong {
+  font-size: 17px;
+  position: relative;
+  font-family: "Gilroy-bold";
+}
+
+.polyclinic-grid figure a:hover {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 14px 20px 0px;
+          box-shadow: rgba(0, 0, 0, 0.3) 0px 14px 20px 0px;
+}
+
+.polyclinic-grid figure a:hover::before {
+  opacity: 1;
+}
+
+.polyclinic-grid figure a::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(54deg, #2fcdf3, #159ee3);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+  -webkit-animation-duration: 0.2s;
+          animation-duration: 0.2s;
+  -webkit-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+}
+
+.polyclinic-grid figure a span {
+  display: block;
+  height: 105px;
+  position: relative;
+}
+
+.polyclinic-grid figure a span img {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -43%);
+          transform: translate(-50%, -43%);
+}
+
+.polyclinic-grid figure.long {
+  width: 420px;
+}
+
+.polyclinic-grid::after {
+  content: "";
+  display: block;
+  height: 0px;
+  clear: both;
+}
+
+.polyclinic-grid figure.important a {
+  background: #0077b3;
+}
+
+.polyclinic-grid figure a::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(54deg, #2fcdf3, #159ee3);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+  -webkit-animation-duration: 0.2s;
+          animation-duration: 0.2s;
+  -webkit-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+}
+
+#long {
+  height: 100%;
+}
+
+#long a:hover span::before {
+  opacity: 0;
+}
+
+#long a:hover img {
+  -webkit-transform: translate(-50%, -43%) scale(1);
+          transform: translate(-50%, -43%) scale(1);
+}
+
+#long a span {
+  position: relative;
+}
+
+#long a span:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 140%;
+  background: #00344e;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.4;
+  z-index: 1;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
+  -webkit-transition: all 0.6s linear;
+  transition: all 0.6s linear;
+}
+
+#long a span img {
+  -webkit-transform: translate(-50%, -50%) scale(1.05);
+          transform: translate(-50%, -50%) scale(1.05);
+}
+
+#long a strong {
+  font-size: 26px;
+  position: absolute;
+  right: 35px;
+  bottom: 23px;
+  z-index: 1;
+}
+
+.doctors-grid > div {
+  width: calc(100% + 22px);
+  margin: 0 0 0 -22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.doctors-grid > div::after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.doctors-grid figure {
+  display: inline-block;
+  width: calc(20% - 25px);
+  margin: 0 0 35px 22px;
+  padding: 0 0 30px;
+  vertical-align: top;
+}
+
+.doctors-grid figure .image img {
+  display: block;
+  width: 100%;
+  border-radius: 6px;
+}
+
+.doctors-grid figure figcaption {
+  position: relative;
+}
+
+.doctors-grid figure h4 {
+  margin: 0;
+  padding: 0 0 5px;
+  font-size: 15px;
+  margin-top: 6px;
+  font-weight: 500;
+  text-align: center;
+  color: #159ee3;
+  font-family: "Gilroy-regular";
+}
+
+.doctors-grid figure p {
+  text-align: center;
+  color: #7c7c7c;
+  font-size: 15px;
+}
+
 #footer {
   width: 100%;
   bottom: 0 !important;
   position: absolute !important;
-  height: 35px;
+  height: 55px;
 }
 
 .footer-container {
@@ -1046,6 +1281,7 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
 }
 
 .footer-left .netty img {

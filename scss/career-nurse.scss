@@ -357,7 +357,7 @@ nav.main-nav ul li a {
 .article-tabs a.active {
   color: rgb(255, 255, 255);
   border-color: rgb(21, 158, 227);
-  background: rgb(21, 158, 227);
+  background: rgb(21, 158, 227) !important;
 }
 .article-tabs a:first-child {
   border-left: 1px solid rgb(220, 220, 220);
@@ -488,7 +488,7 @@ nav.main-nav ul li a {
   width: 100%;
   bottom: 0 !important;
   position: absolute !important;
-  height: 35px;
+  height: 55px;
 }
 .footer-container {
   margin: 0 auto;
@@ -507,6 +507,7 @@ nav.main-nav ul li a {
   flex-wrap: nowrap;
   align-content: stretch;
   align-items: center;
+  text-align: center;
   .netty {
     img {
       width: 95px;

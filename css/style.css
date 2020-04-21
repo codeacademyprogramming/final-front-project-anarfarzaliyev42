@@ -721,8 +721,8 @@ ul {
           animation-duration: 0.2s;
   background: #0fc8f0;
   border-radius: 0px 0px 0px 90%;
-  -webkit-transition: all 0.2s linear 0s;
-  transition: all 0.2s linear 0s;
+  -webkit-transition: all 0.5s linear 0s;
+  transition: all 0.5s linear 0s;
 }
 
 .main-left .main-left-container li a span {
@@ -745,6 +745,7 @@ ul {
   font-size: 20px;
   font-weight: bold;
   padding: 0px 28px;
+  font-family: "Gilroy-bold";
 }
 
 .main-right {
@@ -818,7 +819,7 @@ ul {
   max-width: 1440px;
   margin: 0 auto;
   position: relative;
-  margin-top: 60px;
+  margin-top: 114px;
 }
 
 .right-bottom .right-bottom-container {
@@ -827,7 +828,6 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 60px;
 }
 
 .right-bottom .right-bottom-container .bullets div {
@@ -1066,6 +1066,7 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
 }
 
 .footer-left .netty img {

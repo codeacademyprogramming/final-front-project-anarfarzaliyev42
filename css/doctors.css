@@ -839,7 +839,7 @@ nav.main-nav ul li a::after {
   width: 100%;
   bottom: 0 !important;
   position: absolute !important;
-  height: 35px;
+  height: 55px;
 }
 
 .footer-container {

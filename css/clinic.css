@@ -260,11 +260,11 @@ ul {
   .polyclinic-grid figure {
     width: calc(33% - 20px) !important;
   }
-  .main-content > div {
-    max-width: 1920px !important;
-  }
   .polyclinic-grid figure.long {
     width: calc(66.5% - 20px) !important;
+  }
+  .main-content > div {
+    max-width: 1920px !important;
   }
 }
 
@@ -926,7 +926,7 @@ nav.main-nav ul li a::after {
   width: 100%;
   bottom: 0 !important;
   position: absolute !important;
-  height: 35px;
+  height: 55px;
 }
 
 .footer-container {
@@ -966,6 +966,7 @@ nav.main-nav ul li a::after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
 }
 
 .footer-left .netty img {
