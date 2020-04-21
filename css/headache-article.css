@@ -782,13 +782,13 @@ ul {
   padding: 0;
 }
 
-.current_confrans {
+.about-article {
   padding: 0 0 55px;
   max-width: 800px;
   margin: 0 auto;
 }
 
-.current_confrans h3 {
+.about-article h3 {
   padding: 0 0 30px;
   font-size: 30px;
   font-weight: 500;
@@ -797,18 +797,18 @@ ul {
   margin: 0;
 }
 
-.current_confrans .text {
+.about-article .text {
   font-size: 17px;
   line-height: 1.75;
   color: #404040;
 }
 
-.current_confrans .text ul li {
+.about-article .text ul li {
   padding: 0 0 10px 25px;
   position: relative;
 }
 
-.current_confrans .text ul li::before {
+.about-article .text ul li::before {
   content: "";
   display: block;
   width: 10px;
@@ -821,12 +821,12 @@ ul {
   border-radius: 50%;
 }
 
-.current_confrans .text p {
+.about-article .text p {
   padding: 0 0 25px;
   margin: 0;
 }
 
-.current_confrans .text p strong {
+.about-article .text p strong {
   font-family: "Gilroy-semi-bold";
 }
 
