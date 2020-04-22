@@ -2,13 +2,30 @@ $(function () {
   //Slider
 
   let timer;
-  let counter = 1;
-  let lengthOfSlider=$(".slider-container img").length;
-
-  
-  function sliderTimer() {
  
-    
+  let counter = 1;
+  let lengthOfSlider = $(".slider-container img").length;
+  // Slider first worked here
+  sliderTimer();
+  function sliderTimer() {
+    slider();
+  }
+
+  // Slider worked by timer
+  timer = setInterval(sliderTimer, 5000);
+  // Slder waited and worked after bullet click
+  $(document).on("click", ".bullets div", function () {
+    clearInterval(timer);
+
+    let currentIndex = $(this).index();
+    counter = currentIndex + 1;
+    slider();
+    timer = setInterval(sliderTimer, 5000);
+  
+  
+  });
+  // Slider written here
+  function slider() {
     // Line spans
     let allLineSpans = $(".line-span-container span");
     allLineSpans.each(function (index, element) {
@@ -41,7 +58,7 @@ $(function () {
     let sliderImages = $(".slider-container img");
     sliderImages.each(function (index, element) {
       $(element).removeClass("active-slider-image");
-    $(element).css({
+      $(element).css({
         "animation-name": "none",
       });
     });
@@ -56,62 +73,20 @@ $(function () {
     } else if (counter < lengthOfSlider) {
       counter++;
     }
-    
   }
 
-  timer = setInterval(sliderTimer, 5000);
-  $(document).on('click','.bullets div',function () {
-     let currentIndex= $(this).index();
-      currentElement(currentIndex);
-  })
-
-
-
-  function currentElement(curretIndex) {
-
-    let allLineSpans = $(".line-span-container span");
-    allLineSpans.each(function (index, element) {
-        $(element).removeClass("line-span-active");
-      });
-      $($(".line-span-container span")[curretIndex]).addClass("line-span-active");
-    let allBulletPoints = $(".bullets div");
-    allBulletPoints.each(function (index, element) {
-        $(element).removeClass("active-bullet");
-      });
-      $($(".bullets div")[curretIndex]).addClass("active-bullet");
-  
-    let allMoreAboutLinks = $(".link a");
-    
-    allMoreAboutLinks.each(function (index, element) {
-        $(element).removeClass("active-more-about-link");
-      });
-      $($(".link a")[curretIndex]).addClass("active-more-about-link");
-      let allHeaders = $(".header-container h2");
-    allHeaders.each(function (index, element) {
-      $(element).removeClass("active-slider-header");
+  // Main li animation
+  addMainLIAnime();
+  setTimeout(function () {
+    $(".main-left-container li").css({
+      "animation-name": "none",
+      opacity: "1",
     });
-    $($(".header-container h2")[curretIndex]).addClass("active-slider-header");
-    let sliderImages = $(".slider-container img");
-    sliderImages.each(function (index, element) {
-      $(element).removeClass("active-slider-image");
-    });
+  }, 2500);
 
-    $($(".slider-container img")[curretIndex])
-      .addClass("active-slider-image")
-      .css({
-        "animation-name": "sliderScale",
-      });
+  function addMainLIAnime() {
+    $(".main-left-container li").css({
+      "animation-name": "mainLiAnime",
+    });
   }
-  //   $(document).on('click','.bullets div',function () {
-  //     let allBulletPoints=$('.bullets div');
-  //     allBulletPoints.each(function(index, element) {
-  //         $(element).removeClass("active-bullet");
-
-  //       });
-  //       $(this).addClass("active-bullet");
-  //       sliderTimer();
-  //   })
-
-  
 });
- 

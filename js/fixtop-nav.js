@@ -7,7 +7,7 @@ $(function () {
       var currentScroll = $(window).scrollTop(); // get current position
   
       if (currentScroll >= fixmeTop) {
-        // apply position: fixed if you
+        // apply position: fixed 
         $(".main-nav").css({
           // scroll to that element or below it
           position: "fixed",
@@ -18,7 +18,7 @@ $(function () {
        else {
         // apply position: static
         $(".main-nav").css({
-          // if you scroll above it
+      
           position: "absolute",
           
           'top': '248px',

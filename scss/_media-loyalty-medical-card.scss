@@ -21,12 +21,7 @@
     }
     .toggler {
       right: 20px !important;
-      background: #159ee3;
-      span {
-        em {
-          background: #fff;
-        }
-      }
+     
     }
     .phone {
       span {
@@ -52,14 +47,7 @@
       }
     }
   }
-  .toggler {
-    background: #159ee3;
-    span {
-      em {
-        background: #fff;
-      }
-    }
-  }
+  
 }
 @media (max-width: 767px) and (min-width: 480px) {
   
@@ -167,4 +155,17 @@
         .payment-form{
         padding: 0 !important;
     }
+}
+
+@media (max-width:1280px) and (min-width:1024px){
+  .wrapper{
+    position: absolute !important;
+    width: 100% !important;
+  }
+}
+@media (max-width:1023px) and (min-width:768px){
+  .wrapper{
+    position: absolute !important;
+    width: 100% !important;
+  }
 }
