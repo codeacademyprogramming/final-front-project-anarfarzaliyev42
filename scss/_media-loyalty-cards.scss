@@ -66,6 +66,13 @@
   
 }
 @media (max-width: 767px) {
+  .logo{
+    a{
+     width: 80px !important;
+     height: 92px !important;
+    }
+   
+  }
     .card-list article {
         width: 100% !important;
         height: auto !important;

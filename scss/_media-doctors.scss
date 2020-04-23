@@ -60,7 +60,13 @@
   
 }
 @media (max-width: 767px) {
+  .logo{
+    a{
+     width: 80px !important;
+     height: 92px !important;
+    }
    
+  }
     .main-content {
         h2{
             img{

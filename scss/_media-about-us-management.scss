@@ -67,7 +67,13 @@
   
 }
 @media (max-width: 767px) {
- 
+  .logo{
+    a{
+     width: 80px !important;
+     height: 92px !important;
+    }
+   
+  }
   .main-content > div h2 {
     font-size: 28px !important;
 }

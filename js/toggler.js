@@ -6,16 +6,16 @@ $(function () {
         $("#header").addClass('header-show');
         $('.header-show .toggler').addClass('toggler-active');
         $(".header-show .toggler span em").addClass('toggler-em-active');
-        $('.main-content').addClass('margin-top');
+        //$('.main-content').addClass('margin-top');
         $('.toggler').addClass('active');
         setTimeout(function () {
-          $('.toggler').addClass('active_second');
+          $('.toggler').addClass('active-second');
         },300);
         setTimeout(function () {
-          $('.toggler').addClass('active_last');
+          $('.toggler').addClass('active-last');
         },600);
 
-        
+     
 
         $(".phone a").addClass("phone-a");
         $(".phone a").addClass("phone-icon");
@@ -32,16 +32,16 @@ $(function () {
         $("#header").removeClass('header-show');
         $('.toggler').removeClass('toggler-active');
         $(".toggler span em").removeClass('toggler-em-active');
-        $('.main-content').removeClass('margin-top');
+        //$('.main-content').removeClass('margin-top');
      
-        $('.toggler').removeClass('active_last');
+        $('.toggler').removeClass('active-last');
         setTimeout(function () {
-          $('.toggler').removeClass('active_second');
+          $('.toggler').removeClass('active-second');
         },300);
         setTimeout(function () {
           $('.toggler').removeClass('active');
         },600);
-
+        
         $(".phone a").removeClass("phone-a");
 
         $(".phone a").removeClass("phone-icon");

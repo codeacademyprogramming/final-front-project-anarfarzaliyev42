@@ -36,7 +36,7 @@
           color: #159ee3;
         }
         a::before {
-          background: url("../assets/images/phone_icon.svg") no-repeat 0 0 ;
+          background: url("../assets/images/phone_icon_active.svg") no-repeat 0 0 ;
         }
       }
     }
@@ -79,6 +79,13 @@
   
   }
   @media (max-width: 767px) {
+    .logo{
+      a{
+       width: 80px !important;
+       height: 92px !important;
+      }
+     
+    }
     .branches-grid figure{
       width:100% !important;
   }

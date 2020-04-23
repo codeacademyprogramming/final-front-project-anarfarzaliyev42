@@ -1,6 +1,10 @@
 @import 'media-aside-nav';
 @media (max-width: 1024px) {
- 
+
+
+#header > div .toggler {
+    right: 20px !important;
+}
   #header > div {
     padding: 20px 20px 0 !important;
     .phone {
@@ -58,7 +62,13 @@
 }
 @media (max-width: 767px) {
   
-  
+  .logo{
+    a{
+     width: 80px !important;
+     height: 92px !important;
+    }
+   
+  }
   .aside-sections {
     display: flex;
     flex-direction: column;

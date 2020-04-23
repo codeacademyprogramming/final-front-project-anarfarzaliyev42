@@ -6,24 +6,44 @@ $(function () {
   let counter = 1;
   let lengthOfSlider = $(".slider-container img").length;
   // Slider first worked here
-  sliderTimer();
-  function sliderTimer() {
+let bool=false;
+ 
     slider();
-  }
+  
 
-  // Slider worked by timer
-  timer = setInterval(sliderTimer, 5000);
-  // Slder waited and worked after bullet click
+  // Slider timeout will not work if page start with pointer on right-container
+  setTimeout(function () {
+    if(!bool){
+      timer = setInterval(slider, 5000);
+      console.log('asdsa');
+      
+    }
+  },1500);
+  
+
+  // Slder worked after bullet click
   $(document).on("click", ".bullets div", function () {
     clearInterval(timer);
 
     let currentIndex = $(this).index();
     counter = currentIndex + 1;
     slider();
-    timer = setInterval(sliderTimer, 5000);
+   
   
   
   });
+  // Mouseenter pause slider
+    $(document).on('mouseenter','.main-right-container',function () {
+      clearInterval(timer);
+      bool=true;
+      console.log(bool);
+      
+    })
+  // Mouseleave start slider
+  $(document).on('mouseleave','.main-right-container',function () {
+    timer = setInterval(slider, 5000);
+    
+  })
   // Slider written here
   function slider() {
     // Line spans

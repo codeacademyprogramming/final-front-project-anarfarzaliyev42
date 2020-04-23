@@ -68,6 +68,13 @@
   
 }
 @media (max-width: 767px) {//************************
+  .logo{
+    a{
+     width: 80px !important;
+     height: 92px !important;
+    }
+   
+  }
   .package-container > div {
     width: 100% !important;
     margin: 0 !important;

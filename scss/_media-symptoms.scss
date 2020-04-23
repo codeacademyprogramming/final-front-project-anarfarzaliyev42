@@ -86,6 +86,13 @@
  
 }
 @media (max-width: 767px) {
+   .logo{
+   a{
+    width: 80px !important;
+    height: 92px !important;
+   }
+  
+ }
   .search-input input{
     width: 100% !important;
   }

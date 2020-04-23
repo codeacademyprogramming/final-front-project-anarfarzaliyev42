@@ -220,6 +220,10 @@ ul {
 }
 
 @media (max-width: 767px) {
+  .logo a {
+    width: 80px !important;
+    height: 92px !important;
+  }
   .main-content > div h2 {
     font-size: 28px !important;
   }
@@ -411,7 +415,8 @@ ul {
 }
 
 .header-show {
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
   top: 0px;
   width: 100%;
   z-index: 5;
@@ -448,8 +453,8 @@ ul {
 }
 
 #header div:first-child .logo a {
-  width: 80px;
-  height: 92px;
+  width: 100px;
+  height: 116px;
   background: url("../assets/images/logo.svg") no-repeat 0 0;
   background-size: 100% 100%;
   display: inline-block;
@@ -533,13 +538,13 @@ ul {
   top: 0px;
 }
 
-.toggler span em:first-child:first-child + em {
+.toggler span em:nth-child(2) {
   top: 6px;
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
 }
 
-.toggler em:first-child:first-child + em + em {
+.toggler em:last-child {
   top: 12px;
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
@@ -563,16 +568,16 @@ ul {
   left: 9px !important;
 }
 
-.active em:first-child:first-child + em + em {
+.active em:last-child {
   width: 0;
 }
 
-.active_second em:first-child {
+.active-second em:first-child {
   height: 20px !important;
   top: -3px !important;
 }
 
-.active_last {
+.active-last {
   -webkit-transform: rotate(45deg) !important;
           transform: rotate(45deg) !important;
 }
@@ -750,6 +755,11 @@ nav.main-nav ul li {
   padding: 0 0 20px;
 }
 
+nav.main-nav ul li:hover img {
+  -webkit-transform: scale(1.1) translate(-45%, -45%);
+          transform: scale(1.1) translate(-45%, -45%);
+}
+
 nav.main-nav ul li a {
   display: block;
   width: 70px;
@@ -816,6 +826,11 @@ nav.main-nav ul li a::after {
 
 .left-nav-active {
   background-image: linear-gradient(225deg, #0fc8f0, #149de2) !important;
+}
+
+.left-nav-active img {
+  -webkit-transform: scale(1.1) translate(-45%, -45%) !important;
+          transform: scale(1.1) translate(-45%, -45%) !important;
 }
 
 .analyzes-search {

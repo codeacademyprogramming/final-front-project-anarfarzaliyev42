@@ -7,7 +7,7 @@
  
 }
 .header-show{
-  position: fixed;
+  position: sticky;
     top: 0px;
     width: 100%;
     z-index: 5;
@@ -117,14 +117,14 @@ left: calc(50% - 10px);
   top: 0px;
 
 }
-.toggler span em:first-child:first-child + em {
+.toggler span em:nth-child(2) {
  
  
   top: 6px;
   transform: rotate(0deg);
  
 }
-.toggler em:first-child:first-child + em + em {
+.toggler em:last-child {
 
 
   top: 12px;
@@ -148,17 +148,17 @@ left: calc(50% - 10px);
     left: 9px !important;
 
 }
-.active em:first-child:first-child + em + em{
+.active em:last-child{
   width: 0;
 }
 
-.active_second em:first-child{
+.active-second em:first-child{
   
     height: 20px !important;
     top: -3px !important;
 
 }
-.active_last{
+.active-last{
   transform: rotate(45deg) !important;
 }
 
@@ -511,7 +511,7 @@ transform: translateY(0px);
 .active-more-about-link {
   top: 0 !important;
   opacity: 1 !important;
-  transition: all 1s linear !important;
+  transition: all 0.7s linear !important;
 }
 #aside-nav {
   width: 51%;

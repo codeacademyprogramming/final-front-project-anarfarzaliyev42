@@ -64,6 +64,13 @@
  
 }
 @media (max-width: 767px) {
+  .logo{
+    a{
+     width: 80px !important;
+     height: 92px !important;
+    }
+   
+  }
   .vacancy-list .list ul li {
     width: 100% !important;
     height: auto !important;

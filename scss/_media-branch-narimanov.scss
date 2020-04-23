@@ -69,6 +69,13 @@
   
 }
 @media (max-width: 767px) {
+  .logo{
+    a{
+     width: 80px !important;
+     height: 92px !important;
+    }
+   
+  }
   .doctors-grid figure {
     width: calc(50% - 25px) !important;
 }
