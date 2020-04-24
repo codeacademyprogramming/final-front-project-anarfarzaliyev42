@@ -973,7 +973,7 @@ ul {
   padding: 0;
 }
 
-.card-list article:nth-child(3n-2) {
+.card-list article:nth-child(2n-1) {
   margin: 0;
 }
 

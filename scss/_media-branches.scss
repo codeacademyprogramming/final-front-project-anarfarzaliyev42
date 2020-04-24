@@ -78,6 +78,7 @@
     }
   
   }
+  
   @media (max-width: 767px) {
     .logo{
       a{
@@ -86,11 +87,10 @@
       }
      
     }
-    .branches-grid figure{
-      width:100% !important;
-  }
+   
     .branches-grid figure {
       margin-right: 0 !important;
+      width:100% !important;
     }
     .main-content > div h2{
       font-size: 30px !important;
