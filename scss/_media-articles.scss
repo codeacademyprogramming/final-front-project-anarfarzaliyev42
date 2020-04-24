@@ -1,12 +1,7 @@
 @import 'media-aside-nav';
-@media (max-width: 1024px) {
-.main-content > div {
-    width: 100% !important;
-    max-width: 1920px !important;
-    padding: 0 20px 0 20px !important;
-    margin: 0 !important;
-}
 
+
+@media (max-width: 1024px) {
   
   
   .main-right {
@@ -39,7 +34,6 @@
       }
     }
   }
-}
   @media (max-width: 1023px) and (min-width: 768px){
     .symptom-map{
       padding: 0 22px !important;
@@ -52,6 +46,7 @@
           align-items: center;
         }
   }
+}
 @media (min-width: 1024px) {
 
     

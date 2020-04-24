@@ -14,9 +14,7 @@ let bool=false;
   // Slider timeout will not work if page start with pointer on right-container
   setTimeout(function () {
     if(!bool){
-      timer = setInterval(slider, 5000);
-      console.log('asdsa');
-      
+      timer = setInterval(slider, 5000);   
     }
   },1500);
   
@@ -36,7 +34,7 @@ let bool=false;
     $(document).on('mouseenter','.main-right-container',function () {
       clearInterval(timer);
       bool=true;
-      console.log(bool);
+   
       
     })
   // Mouseleave start slider

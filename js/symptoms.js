@@ -41,6 +41,15 @@ $(function () {
     e.preventDefault();
     let currentDataTag = $(this).attr("data-tag");
     let allDataTags = $(".data-tags a");
+    let allArticles=$('.symptoms-sugg-container article');
+    allArticles.each(function (index, element) {
+      if ($(element).attr("data-tag") == currentDataTag) {
+        $(element).show();
+      } else {
+        $(element).hide();
+      }
+    });
+    
     allDataTags.each(function (index, element) {
       if ($(element).attr("data-tag") == currentDataTag) {
         $(element).show();
@@ -50,7 +59,7 @@ $(function () {
     });
 
     if (checkSymptoms) {
-      $(".simptom-tags").toggle();
+      $(".symptom-tags").toggle();
       $(".search-image-header .text").toggle();
       $(".search-image-header .search-input").toggle();
       $(".symptom-map").toggle();
@@ -58,7 +67,7 @@ $(function () {
       $(".search-image-header .search").toggleClass("man-icon");
       checkSymptoms = false;
     } else if (!checkSymptoms) {
-      $(".simptom-tags").toggle();
+      $(".symptom-tags").toggle();
       $(".search-image-header .text").toggle();
       $(".search-image-header .search-input").toggle();
       $(".symptom-map").toggle();
@@ -70,6 +79,7 @@ $(function () {
   $(document).on("click", ".search-image-header .search", function (e) {
     e.preventDefault();
     let currentDataTag='default';
+    // Links
     let allDataTags = $(".data-tags a");
     allDataTags.each(function (index, element) {
       if ($(element).attr("data-tag") == currentDataTag) {
@@ -78,11 +88,18 @@ $(function () {
         $(element).hide();
       }
     });
+    //Articles
+    let allArticles=$('.symptoms-sugg-container article');
+    allArticles.each(function (index, element) {
+  
+        $(element).show();
+      
+    });
 
     if (checkSymptoms) {
       $(this).toggleClass("search-icon");
       $(this).toggleClass("man-icon");
-      $(".simptom-tags").toggle();
+      $(".symptom-tags").toggle();
       $(".search-image-header .text").toggle();
       $(".search-image-header .search-input").toggle();
       $(".symptom-map").toggle();
@@ -90,7 +107,7 @@ $(function () {
     } else if (!checkSymptoms) {
       $(this).toggleClass("search-icon");
       $(this).toggleClass("man-icon");
-      $(".simptom-tags").toggle();
+      $(".symptom-tags").toggle();
       $(".search-image-header .text").toggle();
       $(".search-image-header .search-input").toggle();
       $(".symptom-map").toggle();

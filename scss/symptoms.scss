@@ -45,7 +45,7 @@
     .phone {
      
       text-align: right;
-      padding: 7px 90px 0px 80px;
+      padding: 3px 90px 0px 80px;
       span {
         display: block;
         font-size: 11px;
@@ -521,7 +521,7 @@ area {
     position: relative;
   }
 }
-.simptom-tags-container {
+.symptom-tags-container {
   padding: 40px 0px;
 }
 .paddingSide25 {
@@ -533,7 +533,7 @@ area {
 .data-tags {
   text-align: left;
 }
-.simptom-tags {
+.symptom-tags {
   display: none;
 }
 .data-tags {
@@ -548,10 +548,11 @@ area {
 }
 .symptoms-sugg-container {
   display: flex;
+  flex-wrap: wrap;
   article {
     margin: 0px 0px 0px 25px;
     padding: 0px 0px 30px;
-    width: 30%;
+    width: calc(33% - 24px);
     p {
       font-size: 14px;
       font-weight: 500;

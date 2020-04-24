@@ -1,10 +1,9 @@
 @import "reset";
 @import "fonts";
-@import "media-check-up-packages";
-@import 'animation';
+@import "media-articles";
+@import "animation";
 #header {
   height: 146px;
-
 }
 .header-show{
   position: sticky;
@@ -26,6 +25,7 @@
     padding: 30px 40px 0px;
     display: flex;
     justify-content: space-between;
+    
     .logo {
   
       animation-duration: 0.15s;
@@ -43,7 +43,7 @@
       }
     }
     .phone {
-    
+     
       text-align: right;
       padding: 3px 90px 0px 80px;
       span {
@@ -76,7 +76,6 @@
         }
       }
     }
-   
   }
 }
 .toggler{
@@ -175,49 +174,56 @@ left: calc(50% - 10px);
   background: #f8fcfe;
   position: fixed;
   top: -10%;
-right: 0;
+  right: 0;
   z-index: -1;
   clip-path: ellipse(100% 50% at 100% 50%);
-animation-name: rightCircleEffect;
-animation-timing-function: linear;
-animation-iteration-count: 1;
+
+  animation-name: rightCircleEffect;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
   animation-duration: 1s;
-animation-direction: alternate;   
-  transition: all 0.9s linear;
-}
-
-.main-bg > div {
-  width: 330px;
-  height: 110%;
-  background: #eaf6fd;
-  position: fixed;
-  top: -5%;
-  right: -110px;
-
-  clip-path: ellipse(100% 50% at 100% 50%);
-
-  animation-duration: 0.9s;
-
-  transition: all 0.9s linear;
-}
-.main-bg > div > div {
-  width: 330px;
-  height: 100%;
-  background: #d5edfa;
-  position: fixed;
-  top: -0%;
-  right: -220px;
-
-  clip-path: ellipse(100% 50% at 100% 50%);
-
-  animation-duration: 0.9s;
+  animation-direction: alternate;
 
   transition: all 0.9s linear;
 }
 
+.main-bg {
+  div {
+    width: 330px;
+    height: 110%;
+    background: #eaf6fd;
+    position: fixed;
+    top: -5%;
+    right: -110px;
+
+    clip-path: ellipse(100% 50% at 100% 50%);
+
+    animation-duration: 0.9s;
+
+    transition: all 0.9s linear;
+  }
+}
+.main-bg {
+  div {
+    div {
+      width: 330px;
+      height: 100%;
+      background: #d5edfa;
+      position: fixed;
+      top: -0%;
+      right: -220px;
+
+      clip-path: ellipse(100% 50% at 100% 50%);
+
+      animation-duration: 0.9s;
+
+      transition: all 0.9s linear;
+    }
+  }
+}
 #aside-nav {
   width: calc(51% - 10px);
-  right: 0;
+  right: calc(-100% + 10px);
   height: 100%;
   font-size: 0;
   background: #159ee3;
@@ -302,7 +308,7 @@ animation-direction: alternate;
 
 nav.main-nav {
   width: 70px;
-  position: fixed;
+  position: absolute;
   left: 40px;
   top: 248px;
   z-index: 1;
@@ -391,114 +397,66 @@ nav.main-nav ul li a {
 }
 .main-content > div {
     max-width: 980px;
+    margin: 0 auto;
+    padding: 0 40px;
     position: relative;
-    margin: 0px auto;
-    padding: 0px 40px;
-}
-.main-content > div > h2 {
+   h2{
+    padding: 0 0 60px;
     text-align: center;
     font-size: 36px;
-    color: rgb(21, 158, 227);
+    color: #159ee3;
     font-weight: bold;
     position: relative;
     z-index: 2;
-    padding: 0px 0px 60px;
-    font-family: 'Gilroy-bold';
+    font-family: "Gilroy-bold";
+   }
 }
-.about-packages {
-    max-width: 800px;
-    padding: 0px 0px 55px;
-    margin: 0px auto;
-}
-.about-packages .text {
-    font-size: 17px;
-    line-height: 1.75;
-    color: rgb(64, 64, 64);
-}
-.about-packages .text p {
-    padding: 0px 0px 25px;
-}
-.package-container {
-    max-width: 800px;
-    margin: 0px auto;
-}
-.package-container > div {
-    width: calc(100% + 32px);
-    margin: 0px 0px 0px -32px;
-}
-.package-container > div > div {
-    width: calc(50% - 32px);
-    float: left;
-    position: relative;
-    margin: 0px 0px 100px 32px;
-}
-.package-container > div > div > a {
-    display: block;
-    position: relative;
-    box-shadow: rgb(203, 203, 203) 0px 0px 0px 1px;
-    animation-duration: 0.2s;
-    overflow: hidden;
-    border-radius: 6px;
-    transition: all 0.2s linear 0s;
-    &:hover{
-      &::after{
-          opacity: 0;
+.article-container{
+    display: flex;
+    flex-wrap: wrap;
+   article{
+    width: calc(33% - 17px);
+    height: 315px;
+
+    margin: 0 0 0 25px;
+    .image{
+      padding: 0 0 15px;
+      a{
+        img{
+          display: block;
+          width: 100%;
+          border-radius: 6px;
+        }
+      
       }
     }
-    
-}
-.package-container > div > div > a img {
-    display: block;
-    width: 100%;
-    opacity: 1;
-}
-.package-container > div > div > a span {
-    display: block;
-    width: 100%;
-    position: absolute;
-    top: calc(100% + 30px);
-    left: 0px;
-    color: rgb(0, 119, 179);
-    font-size: 24px;
-    font-weight: 500;
-    z-index: 1;
-    padding: 0px;
-}
-.package-container > div > div > a::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    opacity: 0.15;
-
-    background: rgb(0, 119, 179);
-    transition: all 0.6s linear 0s;
-}
-.package-container > div > div p {
-    display: block;
-    width: 100%;
-    position: absolute;
-    top: calc(100% + 25px);
-    left: 0px;
-    font-size: 24px;
-    font-weight: bold;
-    z-index: 1;
-    padding: 0px;
-    font-family: "Gilroy-bold";
-}
-.package-container > div > div p a {
-    color: rgb(0, 119, 179);
+    h4{
+        padding: 0 0 17px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.41;
+        color: #404040;
+        font-family: "Gilroy-medium";
+        a{
+            color: #404040;
     text-decoration: none;
+            
+        }
+        
+    }
+    time{
+      font-size: 15px;
+color: #7c7c7c;
+  }
+   }
+   
+   
 }
-
-.package-container > div::after {
-    content: "";
-    display: block;
-    height: 0px;
-    clear: both;
+h4{
+  margin: 0;
+}
+.article-container article:nth-child(3n-2) {
+    margin: 0;
 }
 #footer {
   width: 100%;
@@ -524,7 +482,6 @@ nav.main-nav ul li a {
   align-content: stretch;
   align-items: center;
   text-align: center;
-  
   .netty{
     img{
       width:95px;

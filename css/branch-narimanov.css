@@ -478,7 +478,7 @@ ul {
 
 #header div:first-child .phone {
   text-align: right;
-  padding: 7px 90px 0px 80px;
+  padding: 3px 90px 0px 80px;
 }
 
 #header div:first-child .phone span {
@@ -602,17 +602,13 @@ ul {
   margin-top: 146px !important;
 }
 
-.main-bg.show_me {
-  right: 0;
-}
-
 .main-bg {
   width: 330px;
   height: 120%;
   background: #f8fcfe;
   position: fixed;
   top: -10%;
-  right: -330px;
+  right: 0;
   z-index: -1;
   -webkit-clip-path: ellipse(100% 50% at 100% 50%);
           clip-path: ellipse(100% 50% at 100% 50%);
@@ -630,17 +626,13 @@ ul {
   transition: all 0.9s linear;
 }
 
-.main-bg.show_me > div {
-  right: -110px;
-}
-
 .main-bg > div {
   width: 330px;
   height: 110%;
   background: #eaf6fd;
   position: fixed;
   top: -5%;
-  right: -330px;
+  right: -110px;
   -webkit-clip-path: ellipse(100% 50% at 100% 50%);
           clip-path: ellipse(100% 50% at 100% 50%);
   -webkit-animation-duration: 0.9s;
@@ -649,7 +641,7 @@ ul {
   transition: all 0.9s linear;
 }
 
-.main-bg.show_me > div > div {
+.main-bg > div > div {
   width: 330px;
   height: 100%;
   background: #d5edfa;
@@ -1230,8 +1222,6 @@ b {
   left: 0;
   opacity: 0.4;
   z-index: 1;
-  -webkit-animation-duration: 0.6s;
-          animation-duration: 0.6s;
   -webkit-transition: all 0.6s linear;
   transition: all 0.6s linear;
 }
