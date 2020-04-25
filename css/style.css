@@ -982,6 +982,23 @@ ul {
   position: relative;
 }
 
+#aside-nav section ul li a::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+#aside-nav section ul li a:hover::before {
+  width: 100%;
+}
+
 #aside-nav section h3 {
   font-size: 24px;
   font-weight: bold;
