@@ -131,10 +131,7 @@
   display: none !important;
   }
   
-  .article_tabs a {
-    width: 100% !important;
-    height: 48px !important;
-  }
+  
   .aside-nav-items {
     display: flex;
     flex-direction: column;
@@ -166,11 +163,7 @@
 }
 }
 @media (max-width: 479px) and (min-width: 240px) {
-  .vacancy_list .list ul li {
-    width: 100% !important;
-    height: auto !important;
-    margin: 0 0 30px !important;
-  }
+  
 
  
   .footer-container {
@@ -184,13 +177,7 @@
       color: rgba(0, 0, 0, 0.3) !important;
     }
   }
-  .article_tabs a {
-    width: 100% !important;
-    height: 48px !important;
-    border-left: 1px solid #dcdcdc !important;
-    line-height: 48px !important;
-    border-top: none !important;
-}
+ 
 }
 
 @media (max-width: 1280px) {
@@ -205,9 +192,7 @@
     .content-container {
         padding: 0 15px !important;
     }
-        .payment_form{
-        padding: 0 !important;
-    }
+      
 }
 
 @media (max-width:1280px) and (min-width:1024px){

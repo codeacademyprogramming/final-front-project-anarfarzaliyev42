@@ -212,10 +212,6 @@ ul {
   .search {
     display: none !important;
   }
-  .article_tabs a {
-    width: 100% !important;
-    height: 48px !important;
-  }
   .aside-nav-items {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -251,11 +247,6 @@ ul {
 }
 
 @media (max-width: 479px) and (min-width: 240px) {
-  .vacancy_list .list ul li {
-    width: 100% !important;
-    height: auto !important;
-    margin: 0 0 30px !important;
-  }
   .footer-container {
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: normal !important;
@@ -271,13 +262,6 @@ ul {
   .footer-right span {
     color: rgba(0, 0, 0, 0.3) !important;
   }
-  .article_tabs a {
-    width: 100% !important;
-    height: 48px !important;
-    border-left: 1px solid #dcdcdc !important;
-    line-height: 48px !important;
-    border-top: none !important;
-  }
 }
 
 @media (max-width: 1280px) {
@@ -289,9 +273,6 @@ ul {
 @media (max-width: 479px) and (min-width: 240px) {
   .content-container {
     padding: 0 15px !important;
-  }
-  .payment_form {
-    padding: 0 !important;
   }
 }
 
