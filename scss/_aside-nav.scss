@@ -1,0 +1,100 @@
+#aside-nav {
+    width: 51%;
+    right: 0;
+    height: 100%;
+
+    background: #159ee3;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 4;
+    box-shadow: 0px 0 0px 0 rgba(0, 0, 0, 0);
+    clip-path: ellipse(100% 50% at 200% 50%);
+    transition: all 0.5s linear;
+    .nav-item {
+      display: inline-block;
+      width: 49%;
+      padding: 0 0 32px;
+    
+    
+      ul {
+        padding: 0;
+        li {
+          padding: 0 0 14px;
+          a {
+            font-size: 17px;
+            font-weight: normal;
+            color: #fff;
+            text-decoration: none;
+            position: relative;
+            &::before {
+              content: "";
+              display: block;
+              width: 0;
+              height: 1px;
+              background: #fff;
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              transition: all 0.2s linear;
+            }
+            &:hover {
+              &::before {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+      h3 {
+        font-size: 24px;
+        font-weight: bold;
+        color: #fff;
+          font-family: 'Gilroy-bold';
+        a {
+          color: #fff;
+          text-decoration: none;
+          position: relative;
+  
+          &:hover {
+            &::before {
+              width: 100%;
+            }
+          }
+          &::before {
+            content: "";
+            display: block;
+            width: 0;
+            height: 1px;
+            background: #fff;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            transition: all 0.2s linear;
+          }
+        }
+      }
+    }
+  
+    .aside-nav-container {
+      padding: 130px 0px 0 60px;
+  
+      .aside-nav-items {
+        height: 77vh;
+        overflow-y: auto;
+        
+        &::-webkit-scrollbar {
+          width: 5px;
+          background: #0fc8f0;
+        }
+        &::-webkit-scrollbar-thumb {
+          background: #fff;
+        }
+      }
+    }
+  }
+  .show-aside {
+    right: 0 !important;
+    clip-path: ellipse(110% 200% at 100% 50%) !important;
+    box-shadow: -20px 0 20px 0 rgba(0, 0, 0, 0.15) !important;
+  }

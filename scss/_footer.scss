@@ -1,0 +1,84 @@
+#footer {
+    width: 100%;
+    bottom: 0 !important;
+    position: absolute !important;
+    height: 55px;
+  }
+  .footer-container {
+    margin: 0 auto;
+    padding: 0 40px;
+  
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+  }
+  .footer-left {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    text-align: center;
+    .netty{
+      img{
+        width:95px;
+        height:50px;
+        border:0;
+      }
+    }
+    div {
+      margin: 0 10px;
+      font-size: 14px;
+      a {
+        color: rgba(0, 0, 0, 0.3);
+        text-decoration: none;
+      }
+    }
+    .jis {
+      a {
+        span {
+          display: inline-block;
+          width: 18px;
+          height: 17px;
+          margin: 0 0 0 10px;
+          vertical-align: middle;
+          background: url("../assets/images/jis.svg") no-repeat 50%;
+          background-size: contain;
+        }
+      }
+    }
+  }
+  .footer-right {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  
+    align-items: center;
+    span {
+      font-size: 14px;
+      line-height: 24px;
+  
+      color: rgba(0, 0, 0, 0.3);
+      font-weight: 500;
+    
+    }
+    a {
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      margin: 0 4px;
+      text-align: center;
+      position: relative;
+ 
+      line-height: 24px;
+   
+    }
+  }
+  .copyright {
+    p {
+      color: rgba(0, 0, 0, 0.3);
+      margin: 0;
+    }
+  }

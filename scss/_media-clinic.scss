@@ -42,13 +42,13 @@
   
 }
 @media (max-width: 767px) and (min-width: 480px) {
-    .polyclinic-grid figure.long {
-        width: calc(100% - 20px) !important;
-    }
-    .polyclinic-grid figure {
-        width: calc(50% - 20px) !important;
-    }
-  
+    
+    .polyclinic-services figure.long {
+      width: 93% !important;
+  }
+  .polyclinic-services figure {
+      width: 45% !important;
+  }
   .footer-container {
     display: block;
     text-align: center;
@@ -69,7 +69,7 @@
     }
    
   }
-  .aside-sections {
+  .aside-nav-items {
     display: flex;
     flex-direction: column;
   }
@@ -79,7 +79,7 @@
 }
 @media (max-width: 468px) {
   
-  nav.main-nav {
+  .main-nav {
     display: none;
     width: 100%;
     padding: 0 10px;
@@ -88,10 +88,10 @@
 }
 }
 @media (max-width: 479px) and (min-width: 240px) {
-    .polyclinic-grid figure {
-        width: calc(100% - 20px) !important;
-        max-width: 240px !important;
-        float: none !important;
+    .polyclinic-services figure {
+        width: 93% !important;
+   
+  
         margin: 0 auto 20px !important;
     }
  
@@ -112,7 +112,7 @@
    
 }
 @media (max-width: 1280px) {
-    nav.main-nav {
+    .main-nav {
         display: none;
     }
 }
@@ -126,20 +126,21 @@
       
 }
 @media (max-width: 1366px) and (min-width: 1281px){
-    .main-content > div {
+    .content-container {
         max-width: 940px;
     }
     
 }
 
 @media (max-width: 1023px) and (min-width: 768px){
-    .polyclinic-grid figure {
-        width: calc(33% - 20px) !important;
-    }
-    .polyclinic-grid figure.long {
-      width: calc(66.5% - 20px) !important;
-    }
-    .main-content > div {
+   
+    .polyclinic-services figure.long {
+      width: 93% !important;
+  }
+  .polyclinic-services figure {
+      width: 45% !important;
+  }
+    .content-container {
         max-width: 1920px !important;
     }
     

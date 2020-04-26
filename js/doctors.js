@@ -1,9 +1,9 @@
 $(function () {
     
 
-    $(document).on('click','.doctors-grid section a',function (e) {
+    $(document).on('click','.doctors-container .accordion a',function (e) {
         e.preventDefault();
-         $(this).closest('section').find('.section-container').slideToggle();
+         $(this).closest('.accordion').find('.accordion-container').slideToggle();
         $(this).toggleClass('active-accordion-icon');
 
         

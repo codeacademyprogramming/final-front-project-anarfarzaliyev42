@@ -19,7 +19,7 @@
   .main-right {
     display: none !important;
   }
-  .main-bg {
+  .main-circles {
     display: none !important;
   }
   .main-left {
@@ -39,7 +39,7 @@
       right: 20px !important;
       background: #159ee3;
       span {
-        em {
+        .line {
           background: #fff;
         }
       }
@@ -69,7 +69,7 @@
   .toggler {
     background: #fff;
     span {
-      em {
+      .line {
         background: #159ee3;
       }
     }
@@ -97,19 +97,19 @@
    }
   
  }
-  .aside-sections{
+  .aside-nav-items{
     flex-direction: row;
     flex-wrap: wrap;
   
   }
-  .aside-sections{
+  .aside-nav-items{
     flex-direction: column !important;
 
   }
-  .aside-sections{
+  .aside-nav-items{
   
-    section{
-      width: calc(100% - 10px) !important;
+    .nav-item{
+      width: 100% !important;
     }
   }
 }
@@ -149,6 +149,9 @@
   .main-left-container li a strong {
     font-size: 18px !important;
     font-weight: 500 !important;
+    position: relative;
+    bottom: 22px;
+
   }
 }
 @media (max-width: 624px) and (min-width: 480px) {

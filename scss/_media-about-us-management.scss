@@ -74,7 +74,7 @@
     }
    
   }
-  .main-content > div h2 {
+  .content-container h2 {
     font-size: 28px !important;
 }
   .vacancy-list .list ul li {
@@ -83,12 +83,12 @@
     margin: 0 0 30px !important;
 }
   
-  .article-tabs a {
+  .internal-nav a {
     width: 100% !important;
     height: 48px !important;
     line-height: 48px !important;
   }
-  .aside-sections {
+  .aside-nav-items {
     display: flex;
     flex-direction: column;
   }
@@ -99,7 +99,7 @@
 }
 @media (max-width: 468px) {
  
-  nav.main-nav {
+  .main-nav {
     display: none;
     width: 100%;
     padding: 0 10px;
@@ -129,7 +129,7 @@
       color: rgba(0, 0, 0, 0.3) !important;
     }
   }
-  .article-tabs a {
+  .internal-nav a {
     width: 100% !important;
     height: 48px !important;
     border-left: 1px solid #dcdcdc !important;
@@ -139,7 +139,7 @@
 }
 
 @media (max-width: 1280px) {
-    nav.main-nav {
+    .main-nav {
         display: none;
     }
     
@@ -156,7 +156,7 @@
     .wrapper{
         padding: 0px 0px 1px !important;
     }
-    .main-content > div {
+    .content-container {
         padding: 0 15px !important;
     }
         .payment-form{

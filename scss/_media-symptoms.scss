@@ -1,6 +1,6 @@
 @import 'media-aside-nav';
 @media (max-width: 1024px) {
-.main-content > div {
+.content-container {
     width: 100% !important;
     max-width: 1920px !important;
     padding: 0 20px 0 20px !important;
@@ -70,7 +70,7 @@
   
 }
 @media (max-width: 767px) and (min-width: 480px) {
-  .main-content > div{
+  .content-container{
     padding: 0 15px 0 15px !important;
     margin: 0 !important;
   }
@@ -135,7 +135,7 @@
     width: 100% !important;
     height: 48px !important;
   }
-  .aside-sections {
+  .aside-nav-items {
     display: flex;
     flex-direction: column;
   }
@@ -144,7 +144,7 @@
   }
 }
 @media (max-width: 468px) {
-  .main-content > div{
+  .content-container{
     padding: 0 15px !important;
   }
   .article-container
@@ -157,7 +157,7 @@
       margin: 0 0 25px !important;
     }
   }
-  nav.main-nav {
+  .main-nav {
     display: none;
     width: 100%;
     padding: 0 10px;
@@ -201,7 +201,7 @@
 }
 
 @media (max-width: 1280px) {
-    nav.main-nav {
+    .main-nav {
         display: none;
     }
 }
@@ -209,7 +209,7 @@
 @media (max-width: 479px) and (min-width: 240px)
 {
     
-    .main-content > div {
+    .content-container {
         padding: 0 15px !important;
     }
         .payment_form{

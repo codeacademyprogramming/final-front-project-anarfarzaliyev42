@@ -1,0 +1,91 @@
+
+.main-nav {
+    width: 70px;
+    position: fixed;
+    left: 40px;
+    top: 248px;
+    z-index: 1;
+    ul {
+      padding: 0;
+    }
+  }
+  .main-nav ul li {
+    padding: 0 0 20px;
+    &:hover{
+      img{
+        transform: scale(1.1) translate(-45%, -45%);
+      }
+    }
+   
+  }
+  .main-nav ul li a {
+    display: block;
+    width: 70px;
+    height: 70px;
+    &:hover{
+      &::before{
+        opacity: 1;
+      }
+      
+    }
+    background-image: linear-gradient(225deg, #dcdcdc, #dcdcdc);
+    position: relative;
+    overflow: hidden;
+  
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0);
+  
+    border-radius: 10px;
+  
+    
+  
+    transition: all 0.2s linear;
+    img {
+      display: block;
+      max-height: 38px;
+      max-width: 38px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      
+  
+      transition: all 0.2s linear;
+    }
+    &::before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      
+      background-image: linear-gradient(225deg, #0fc8f0, #149de2);
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+  
+      transition: all 0.2s linear;
+    }
+    &::after {
+      content: "";
+      display: block;
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: #c2c2c2;
+      opacity: 0.3;
+  
+      border-radius: 0 0 0 100%;
+  
+ 
+  
+      transition: all 0.2s linear;
+    }
+  }
+  .left-nav-active {
+    background-image: linear-gradient(225deg, #0fc8f0, #149de2) !important;
+    img{
+      transform: scale(1.1) translate(-45%, -45%) !important; 
+    }
+  }

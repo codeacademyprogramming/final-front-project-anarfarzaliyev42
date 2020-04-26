@@ -2,7 +2,7 @@
 @media (max-width: 1024px) {
  
 
-  nav.main-nav {
+  .main-nav {
     display: none;
 
 }
@@ -43,7 +43,7 @@
   }
 
   @media (min-width: 1024px) {
-    .branches-grid figure{
+    .branches-container figure{
       &:nth-child(3n) {
         margin: 0 0 100px;
       }
@@ -88,16 +88,16 @@
      
     }
    
-    .branches-grid figure {
+    .branches-container figure {
       margin-right: 0 !important;
       width:100% !important;
     }
-    .main-content > div h2{
+    .content-container h2{
       font-size: 30px !important;
     }
    
   
-    .aside-sections{
+    .aside-nav-items{
       display: flex;
       flex-direction: column;
     }
@@ -107,7 +107,7 @@
       padding: 0 !important;
     }
     
-   .branches-grid figure  {
+   .branches-container figure  {
       width: 100% !important;
     margin: 0 0 80px !important;
     }
@@ -132,18 +132,18 @@
    
   }
   @media (max-width: 1280px) and (min-width: 1024px){
-    nav.main-nav {
+    .main-nav {
         display: none ;
     }
   }
   @media (min-width: 1280px){
-    nav.main-nav {
+    .main-nav {
         display: block ;
     }
   }
 
   @media (max-width: 767px) and (min-width: 480px){
-    nav.main-nav {
+    .main-nav {
         display: none;
     }
     
@@ -151,20 +151,20 @@
   }
 
   @media (max-width: 480px){
-    nav.main-nav {
+    .main-nav {
         display: none;
        
     }
-    .branches-grid figure{
-        width: calc(100% - 19px) !important;
+    .branches-container figure{
+        width: 93% !important;
     }
   }
   @media (max-width: 1023px) and (min-width: 768px){
-    .branches-grid figure:nth-child(2n) {
+    .branches-container figure:nth-child(2n) {
       margin-right: 0 !important;
     }
  
-    .branches-grid figure{
+    .branches-container figure{
         width:  48% !important;
     }
   

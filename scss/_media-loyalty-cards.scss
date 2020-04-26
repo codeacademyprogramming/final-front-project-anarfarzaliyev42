@@ -51,7 +51,7 @@
 }
 @media (max-width: 767px) and (min-width: 480px) {
   .vacancy-list .list ul li {
-    width: calc(50% - 25px) !important;
+    width: 47% !important;
   }
 
   .footer-container {
@@ -73,21 +73,21 @@
     }
    
   }
-    .card-list article {
+    .cards-container .card {
         width: 100% !important;
         height: auto !important;
         margin: 0 0 40px !important;
     }
-    .card-list{
+    .cards-container{
         flex-direction: column;
     }
  
-  .article-tabs a {
+  .internal-nav a {
     width: 100% !important;
     height: 48px !important;
     line-height: 48px !important;
   }
-  .aside-sections {
+  .aside-nav-items {
     display: flex;
     flex-direction: column;
   }
@@ -101,7 +101,7 @@
     padding: 9px 0px 32px 0px !important;
 }
  
-  nav.main-nav {
+  .main-nav {
     display: none;
     width: 100%;
     padding: 0 10px;
@@ -119,10 +119,7 @@
     padding: 0 0 20px !important;
     text-align: center !important;
 }
-.text-container .image.compact img {
-  max-width: 100% !important;
-  width: auto !important;
-}
+
  
   .footer-container {
     flex-direction: column !important;
@@ -135,19 +132,16 @@
       color: rgba(0, 0, 0, 0.3) !important;
     }
   }
-  .article-tabs a {
+  .internal-nav a {
     width: 100% !important;
     height: 48px !important;
-    border-left: 1px solid #dcdcdc !important;
+
     line-height: 48px !important;
-    border-top: none !important;
+  }
 }
-}
-@media (max-width: 1280px) and (min-width: 1024px) {
-   
-}
+
 @media (max-width: 1280px) {
-    nav.main-nav {
+    .main-nav {
         display: none;
     }
 }
@@ -157,7 +151,7 @@
     .wrapper{
         padding: 0px 0px 1px !important;
     }
-    .main-content > div {
+    .content-container {
         padding: 0 15px !important;
     }
         .payment-form{

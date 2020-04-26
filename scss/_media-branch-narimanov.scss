@@ -50,11 +50,11 @@
   
 }
 @media (max-width: 767px) and (min-width: 480px) {
-  .polyclinic-grid figure.long {
-    width: calc(100% - 20px) !important;
+  .polyclinic-services figure.long {
+    width: 93% !important;
 }
-.polyclinic-grid figure {
-    width: calc(50% - 20px) !important;
+.polyclinic-services figure {
+    width: 45% !important;
 }
   
   .footer-container {
@@ -76,13 +76,13 @@
     }
    
   }
-  .doctors-grid figure {
-    width: calc(50% - 25px) !important;
+  .doctors-container figure {
+    width: 45% !important;
 }
     .open-menu-select{
         display: block !important;
     }
-    .branch-tabs div{
+    .internal-nav div{
         display: none !important;
     }
     .current-branch-map {
@@ -92,7 +92,7 @@
     .branch-address {
         width: 100% !important;
         padding: 30px 20px !important;
-        float: none !important;
+  
     }
    .map-frame{
     height: 400px !important;
@@ -106,12 +106,12 @@
         }
     }
   
-  .article-tabs a {
+  .internal-nav a {
     width: 100% !important;
     height: 48px !important;
     line-height: 48px !important;
   }
-  .aside-sections {
+  .aside-nav-items {
     display: flex;
     flex-direction: column;
   }
@@ -120,17 +120,17 @@
   }
 }
 @media (max-width: 468px) {
-  .main-content > div > h2 {
+  .content-container > h2 {
 
     font-size: 23px !important;
     padding: 9px 0px 30px 26px !important;
    
 
 }
-.doctors-grid figure {
-  width: calc(100% - 25px) !important;
+.doctors-container figure {
+  width: 100% !important;
 }
-  nav.main-nav {
+  .main-nav {
     display: none;
     width: 100%;
     padding: 0 10px;
@@ -160,7 +160,7 @@
       color: rgba(0, 0, 0, 0.3) !important;
     }
   }
-  .article-tabs a {
+  .internal-nav a {
     width: 100% !important;
     height: 48px !important;
     border-left: 1px solid #dcdcdc !important;
@@ -170,7 +170,7 @@
 }
 
 @media (max-width: 1280px) {
-    nav.main-nav {
+    .main-nav {
         display: none;
     }
 }
@@ -180,29 +180,29 @@
     .wrapper{
         padding: 0px 0px 1px !important;
     }
-    .main-content > div {
+    .content-container {
         padding: 0 15px !important;
     }
         .payment-form{
         padding: 0 !important;
     }
-    .polyclinic-grid figure {
-      width: calc(100% - 20px) !important;
+    .polyclinic-services figure {
+      width: 100% !important;
       max-width: 240px !important;
-      float: none !important;
+
       margin: 0 auto 20px !important;
   }
 
 }
 @media (max-width: 1023px) and (min-width: 768px){
-  .polyclinic-grid figure {
-      width: calc(33% - 20px) !important;
+  .polyclinic-services figure {
+      width: 28% !important;
   }
-  .polyclinic-grid figure.long {
-    width: calc(66.5% - 20px) !important;
+  .polyclinic-services figure.long {
+    width: 59% !important;
   }
-  .doctors-grid figure {
-    width: calc(33% - 25px) !important;
+  .doctors-container figure {
+    width: 28% !important;
 }
   
 }

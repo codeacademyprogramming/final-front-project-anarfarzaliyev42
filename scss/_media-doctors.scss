@@ -44,8 +44,8 @@
  
 }
 @media (max-width: 767px) and (min-width: 480px) {
-    .doctors-grid figure {
-        width: calc(50% - 25px) !important;
+    .doctors-container figure {
+      width: 44% !important;
     }
  
   .footer-container {
@@ -75,7 +75,7 @@
         }
     }
   
-  .aside-sections {
+  .aside-nav-items {
     display: flex;
     flex-direction: column;
   }
@@ -84,11 +84,11 @@
   }
 }
 @media (max-width: 468px) {
-    .doctors-grid figure {
-        width: calc(100% - 25px) !important;
+    .doctors-container figure {
+         width: 93% !important;
     }
  
-  nav.main-nav {
+  .main-nav {
     display: none;
     width: 100%;
     padding: 0 10px;
@@ -110,7 +110,7 @@
       color: rgba(0, 0, 0, 0.3) !important;
     }
   }
-  .article-tabs a {
+  .internal-nav a {
     width: 100% !important;
     height: 48px !important;
     border-left: 1px solid #dcdcdc !important;
@@ -120,7 +120,7 @@
 }
 
 @media (max-width: 1280px) {
-    nav.main-nav {
+    .main-nav {
         display: none;
     }
 }
@@ -131,21 +131,21 @@
     .wrapper{
         padding: 0px 0px 1px !important;
     }
-    .main-content > div {
+    .content-container {
         padding: 0 15px !important;
     }
      
 }
 @media (max-width: 480px){
-    .doctors-grid figure {
-        width: calc(100% - 25px) !important;
+    .doctors-container figure {
+        width: 93% !important;
     }
     
     
 }
 @media (max-width: 1023px) and (min-width: 768px){
-    .doctors-grid figure {
-        width: calc(33% - 25px) !important;
+    .doctors-container figure {
+        width: 28% !important;
     }
 }
 

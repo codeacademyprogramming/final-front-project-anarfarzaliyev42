@@ -1,0 +1,116 @@
+.chats-container {
+    position: fixed;
+    right: 25px;
+    bottom: 60px;
+    &:hover {
+      ul {
+        opacity: 1;
+        transform: translate(0, 0);
+        visibility: visible;
+        li {
+          padding: 0 0 15px;
+        }
+      }
+    }
+    .call {
+      display: block;
+      width: 60px;
+      height: 60px;
+      background: #159ee3 url("../assets/images/ic.png") no-repeat 50%;
+      background-size: 50%;
+      position: relative;
+      box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+      border-radius: 50%;
+      transition: all 0.3s linear;
+      &:hover {
+        transform: rotate(360deg);
+        box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.4);
+      }
+      &::after {
+        box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2);
+        transform: scale(1.4);
+        content: "";
+        display: block;
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-radius: 50%;
+      }
+      &::before {
+        box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2);
+        content: "";
+        border-radius: 50%;
+        display: block;
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: scale(1.15);
+      }
+    }
+    ul {
+      width: 60px;
+      position: absolute;
+      left: 0;
+      padding: 0;
+      bottom: 100%;
+      opacity: 0;
+      visibility: hidden;
+      transform: translate(0, 20px);
+      transition: all 0.2s linear;
+      li {
+        padding: 0 0 5px;
+        transition: all 0.2s linear;
+        a {
+          display: block;
+          width: 60px;
+          height: 60px;
+          position: relative;
+          box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
+          border-radius: 50%;
+          &::before {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0);
+            transform: scale(1);
+            border-radius: 50%;
+            transition: all 0.1s linear;
+          }
+          &::after {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0);
+            transform: scale(1);
+            transition: all 0.2s linear;
+          }
+        }
+        .facebook {
+          background: #3b5998 url("../assets/images/facebook_icon.png") no-repeat
+            50%;
+          background-size: 55%;
+        }
+        .whatsapp {
+          background: #29b200 url("../assets/images/whatsapp_white_icon.png")
+            no-repeat 50%;
+          background-size: 55%;
+        }
+        .chat {
+          background: #ee8208 url("../assets/images/chat_icon.svg") no-repeat 50%;
+          background-size: 55%;
+        }
+      }
+    }
+  }

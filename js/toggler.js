@@ -5,7 +5,7 @@ $(function () {
       
         $("#header").addClass('header-show');
         $('.header-show .toggler').addClass('toggler-active');
-        $(".header-show .toggler span em").addClass('toggler-em-active');
+        $(".header-show .toggler span .line").addClass('toggler-line-active');
         //$('.main-content').addClass('margin-top');
         $('.toggler').addClass('active');
         setTimeout(function () {
@@ -31,7 +31,7 @@ $(function () {
       
         $("#header").removeClass('header-show');
         $('.toggler').removeClass('toggler-active');
-        $(".toggler span em").removeClass('toggler-em-active');
+        $(".toggler span .line").removeClass('toggler-line-active');
         //$('.main-content').removeClass('margin-top');
      
         $('.toggler').removeClass('active-last');

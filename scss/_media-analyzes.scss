@@ -4,7 +4,7 @@
   
     .analiz_wrapper .analyzes-right {
         width: 100% !important;
-        float: none !important;
+  
         height: 400px !important;
     
     }
@@ -76,17 +76,12 @@
   
 }
 @media (max-width: 767px) and (min-width: 480px) {
-  .analiz_wrapper {
+  .analyzes-result-area  {
     display: block !important;
     padding: 0 0 10px !important;
-  }
-  .analyzes-left {
-    width: 100% !important;
-    float: none !important;
-    margin: 0 0 20px !important;
 
-    border-radius: 6px;
-  }
+  } 
+ 
   .analyzes-search .link {
     width: 100%;
     text-align: center;
@@ -111,7 +106,9 @@
  
 }
 @media (max-width: 767px) {
- 
+ .analyzes-result-area{
+  height: 500px !important;
+ }
   .logo{
     a{
      width: 80px !important;
@@ -119,12 +116,12 @@
     }
    
   }
-  .main-content > div h2 {
+  .content-container h2 {
     font-size: 28px !important;
 }
   
 
-  .aside-sections {
+  .aside-nav-items {
     display: flex;
     flex-direction: column;
   }
@@ -134,7 +131,7 @@
 }
 @media (max-width: 468px) {
  
-  nav.main-nav {
+  .main-nav {
     display: none;
     width: 100%;
     padding: 0 10px;
@@ -170,7 +167,7 @@
 }
 
 @media (max-width: 1280px) {
-    nav.main-nav {
+    .main-nav {
         display: none;
     }
 }
@@ -187,7 +184,7 @@
     .wrapper{
         padding: 0px 0px 120px !important;
     }
-    .main-content > div {
+    .content-container {
         padding: 0 15px !important;
     }
         .payment-form{
