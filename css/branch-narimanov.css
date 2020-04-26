@@ -220,14 +220,6 @@ ul {
 }
 
 @media (max-width: 479px) and (min-width: 240px) {
-  .text-container .image.compact {
-    padding: 0 0 20px !important;
-    text-align: center !important;
-  }
-  .text-container .image.compact img {
-    max-width: 100% !important;
-    width: auto !important;
-  }
   .footer-container {
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: normal !important;
