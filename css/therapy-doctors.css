@@ -127,7 +127,7 @@ ul {
 
 @media (max-width: 767px) and (min-width: 480px) {
   .doctors-container figure {
-    width: 47% !important;
+    width: 45% !important;
   }
   .footer-container {
     display: block;
@@ -1101,6 +1101,14 @@ ul {
 .internal-nav {
   padding: 0 0 50px;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .internal-nav a {
@@ -1140,6 +1148,9 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }

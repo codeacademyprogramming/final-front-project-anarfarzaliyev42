@@ -58,6 +58,7 @@
   max-width: 980px;
   margin: 0 auto;
   padding: 0 40px;
+
   position: relative;
   h2 {
     padding: 0 0 60px;
@@ -110,6 +111,9 @@
 .internal-nav {
   padding: 0 0 50px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   a {
     width: 25%;
     height: 58px;
@@ -149,6 +153,7 @@
   width: 105%;
   margin: 0 0 0 -22px;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 

@@ -109,7 +109,9 @@
 .internal-nav {
   padding: 0 0 50px;
   text-align: center;
-
+  display: flex;
+flex-wrap: wrap;
+  justify-content: center;
   a {
     height: 58px;
     border: 1px solid #dcdcdc;

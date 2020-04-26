@@ -65,6 +65,9 @@
   
 }
 @media (max-width: 767px) {
+  .current-card .info {
+    width: 100% !important;
+}
   .cards-suggestion{
     flex-direction: column !important;
   }

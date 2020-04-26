@@ -146,6 +146,9 @@ ul {
 }
 
 @media (max-width: 767px) {
+  .current-card .info {
+    width: 100% !important;
+  }
   .cards-suggestion {
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: normal !important;
@@ -1164,7 +1167,7 @@ ul {
 }
 
 .current-card .info-bottom ul li {
-  width: 33%;
+  width: 40%;
   padding: 0 40px 0 0;
 }
 

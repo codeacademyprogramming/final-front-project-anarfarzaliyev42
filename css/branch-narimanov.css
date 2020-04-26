@@ -157,7 +157,7 @@ ul {
     height: 92px !important;
   }
   .doctors-container figure {
-    width: 45% !important;
+    width: 44% !important;
   }
   .open-menu-select {
     display: block !important;
@@ -175,7 +175,6 @@ ul {
   .branch-address {
     width: 100% !important;
     padding: 30px 20px !important;
-
   }
   .map-frame {
     height: 400px !important;
@@ -272,7 +271,6 @@ ul {
   .polyclinic-services figure {
     width: 100% !important;
     max-width: 240px !important;
-  
     margin: 0 auto 20px !important;
   }
 }

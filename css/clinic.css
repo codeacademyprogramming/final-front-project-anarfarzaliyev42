@@ -176,7 +176,6 @@ ul {
 @media (max-width: 479px) and (min-width: 240px) {
   .polyclinic-services figure {
     width: 93% !important;
-
     margin: 0 auto 20px !important;
   }
   .footer-container {
@@ -216,13 +215,10 @@ ul {
 
 @media (max-width: 1023px) and (min-width: 768px) {
   .polyclinic-services figure.long {
-    width: 93% !important;
+    width: 58% !important;
   }
   .polyclinic-services figure {
-    width: 45% !important;
-  }
-  .content-container {
-    max-width: 1920px !important;
+    width: 28% !important;
   }
 }
 
