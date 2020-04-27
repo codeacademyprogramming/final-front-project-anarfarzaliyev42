@@ -195,6 +195,10 @@ ul {
 }
 
 @media (max-width: 479px) and (min-width: 240px) {
+  .main-left-container li a::after {
+    width: 50px !important;
+    height: 50px !important;
+  }
   .footer-container {
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: normal !important;

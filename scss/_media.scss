@@ -90,6 +90,7 @@
   
 }
 @media (max-width: 767px) {
+  
  .logo{
    a{
     width: 80px !important;
@@ -115,6 +116,10 @@
 }
 
 @media (max-width: 479px) and (min-width: 240px) {
+  .main-left-container li a::after{
+    width: 50px !important;
+    height: 50px !important;
+  }
   .footer-container {
     flex-direction: column !important;
   }
