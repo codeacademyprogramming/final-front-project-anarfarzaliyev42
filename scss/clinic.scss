@@ -58,7 +58,7 @@
   margin: 0px auto;
   padding: 0px 40px;
 }
-.polyclinic-services figure.long a .service-image img {
+.polyclinic-services #long a .service-image img {
   width: 100%;
 
   transition: all 0.6s linear 0s;
@@ -76,9 +76,10 @@
   width: 106%;
   margin: 0px 0px 0px -20px;
   display: flex;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
-.polyclinic-services figure {
+.polyclinic-services .service {
   width: 200px;
   height: 142px;
 

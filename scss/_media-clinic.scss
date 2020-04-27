@@ -43,10 +43,10 @@
 }
 @media (max-width: 767px) and (min-width: 480px) {
     
-    .polyclinic-services figure.long {
+    .polyclinic-services #long {
       width: 93% !important;
   }
-  .polyclinic-services figure {
+  .polyclinic-services .service {
       width: 45% !important;
   }
   .footer-container {
@@ -88,7 +88,7 @@
 }
 }
 @media (max-width: 479px) and (min-width: 240px) {
-    .polyclinic-services figure {
+    .polyclinic-services .service {
         width: 93% !important;
    
   
@@ -134,10 +134,10 @@
 
 @media (max-width: 1023px) and (min-width: 768px){
    
-    .polyclinic-services figure.long {
+    .polyclinic-services #long {
       width: 58% !important;
   }
-  .polyclinic-services figure {
+  .polyclinic-services .service {
       width: 28% !important;
   }
   

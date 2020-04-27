@@ -202,7 +202,7 @@ ul {
         -ms-flex-direction: column !important;
             flex-direction: column !important;
   }
-  .symptoms-sugg-container article {
+  .symptoms-sugg-container .article {
     width: 100% !important;
     margin: 40px 0 0 !important;
   }
@@ -233,7 +233,7 @@ ul {
   .article-container {
     width: 100% !important;
   }
-  .article-container article {
+  .article-container .article {
     width: 100% !important;
     margin: 0 0 25px !important;
   }
@@ -1264,19 +1264,19 @@ area {
       flex-wrap: wrap;
 }
 
-.symptoms-sugg-container article {
+.symptoms-sugg-container .article {
   margin: 0px 0px 0px 25px;
   padding: 0px 0px 30px;
   width: 29%;
 }
 
-.symptoms-sugg-container article p {
+.symptoms-sugg-container .article p {
   font-size: 14px;
   line-height: 1.57;
   color: #7c7c7c;
 }
 
-.symptoms-sugg-container article h4 {
+.symptoms-sugg-container .article h4 {
   font-size: 17px;
   line-height: 1.41;
   color: #404040;
@@ -1284,22 +1284,22 @@ area {
   font-family: "Gilroy-regular";
 }
 
-.symptoms-sugg-container article h4 a {
+.symptoms-sugg-container .article h4 a {
   color: #404040;
   text-decoration: none;
 }
 
-.symptoms-sugg-container article .image {
+.symptoms-sugg-container .article .image {
   padding: 0px 0px 16px;
 }
 
-.symptoms-sugg-container article .image a {
+.symptoms-sugg-container .article .image a {
   border-radius: 6px;
   display: block;
   overflow: hidden;
 }
 
-.symptoms-sugg-container article .image a img {
+.symptoms-sugg-container .article .image a img {
   width: 100%;
 }
 

@@ -133,10 +133,10 @@ ul {
 }
 
 @media (max-width: 767px) and (min-width: 480px) {
-  .polyclinic-services figure.long {
+  .polyclinic-services #long {
     width: 93% !important;
   }
-  .polyclinic-services figure {
+  .polyclinic-services .service {
     width: 45% !important;
   }
   .footer-container {
@@ -156,7 +156,7 @@ ul {
     width: 80px !important;
     height: 92px !important;
   }
-  .doctors-container figure {
+  .doctors-container .doctor {
     width: 44% !important;
   }
   .open-menu-select {
@@ -207,7 +207,7 @@ ul {
     font-size: 23px !important;
     padding: 9px 0px 30px 26px !important;
   }
-  .doctors-container figure {
+  .doctors-container .doctor {
     width: 100% !important;
   }
   .main-nav {
@@ -260,7 +260,7 @@ ul {
   .payment-form {
     padding: 0 !important;
   }
-  .polyclinic-services figure {
+  .polyclinic-services .service {
     width: 100% !important;
     max-width: 240px !important;
     margin: 0 auto 20px !important;
@@ -268,13 +268,13 @@ ul {
 }
 
 @media (max-width: 1023px) and (min-width: 768px) {
-  .polyclinic-services figure {
+  .polyclinic-services .service {
     width: 28% !important;
   }
-  .polyclinic-services figure.long {
+  .polyclinic-services #long {
     width: 59% !important;
   }
-  .doctors-container figure {
+  .doctors-container .doctor {
     width: 28% !important;
   }
 }
@@ -1320,13 +1320,13 @@ ul {
       flex-wrap: wrap;
 }
 
-.polyclinic-services figure {
+.polyclinic-services .service {
   width: 208px;
   height: 142px;
   margin: 0px 0px 20px 20px;
 }
 
-.polyclinic-services figure a {
+.polyclinic-services .service a {
   display: block;
   height: 142px;
   color: white;
@@ -1340,22 +1340,22 @@ ul {
   transition: all 0.2s linear 0s;
 }
 
-.polyclinic-services figure a strong {
+.polyclinic-services .service a strong {
   font-size: 17px;
   position: relative;
   font-family: "Gilroy-bold";
 }
 
-.polyclinic-services figure a:hover {
+.polyclinic-services .service a:hover {
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 14px 20px 0px;
           box-shadow: rgba(0, 0, 0, 0.3) 0px 14px 20px 0px;
 }
 
-.polyclinic-services figure a:hover::before {
+.polyclinic-services .service a:hover::before {
   opacity: 1;
 }
 
-.polyclinic-services figure a::before {
+.polyclinic-services .service a::before {
   content: "";
   display: block;
   width: 100%;
@@ -1369,13 +1369,13 @@ ul {
   transition: all 0.2s linear 0s;
 }
 
-.polyclinic-services figure a .service-image {
+.polyclinic-services .service a .service-image {
   display: block;
   height: 105px;
   position: relative;
 }
 
-.polyclinic-services figure a .service-image img {
+.polyclinic-services .service a .service-image img {
   display: block;
   position: absolute;
   top: 50%;
@@ -1384,7 +1384,7 @@ ul {
           transform: translate(-50%, -43%);
 }
 
-.polyclinic-services figure.long {
+.polyclinic-services #long {
   width: 437px;
 }
 
@@ -1392,7 +1392,7 @@ ul {
   background: #0077b3;
 }
 
-.polyclinic-services figure a::before {
+.polyclinic-services .service a::before {
   content: "";
   display: block;
   width: 100%;
@@ -1466,18 +1466,18 @@ ul {
       flex-wrap: wrap;
 }
 
-.doctors-container figure {
+.doctors-container .doctor {
   width: 22.3%;
   margin: 0 0 35px 22px;
   padding: 0 0 30px;
 }
 
-.doctors-container figure .image img {
+.doctors-container .doctor .image img {
   width: 100%;
   border-radius: 6px;
 }
 
-.doctors-container figure h4 {
+.doctors-container .doctor h4 {
   margin: 0;
   padding: 0 0 5px;
   font-size: 15px;
@@ -1488,7 +1488,7 @@ ul {
   font-family: "Gilroy-regular";
 }
 
-.doctors-container figure p {
+.doctors-container .doctor p {
   text-align: center;
   color: #7c7c7c;
   font-size: 15px;

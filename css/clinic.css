@@ -126,10 +126,10 @@ ul {
 }
 
 @media (max-width: 767px) and (min-width: 480px) {
-  .polyclinic-services figure.long {
+  .polyclinic-services #long {
     width: 93% !important;
   }
-  .polyclinic-services figure {
+  .polyclinic-services .service {
     width: 45% !important;
   }
   .footer-container {
@@ -174,7 +174,7 @@ ul {
 }
 
 @media (max-width: 479px) and (min-width: 240px) {
-  .polyclinic-services figure {
+  .polyclinic-services .service {
     width: 93% !important;
     margin: 0 auto 20px !important;
   }
@@ -214,10 +214,10 @@ ul {
 }
 
 @media (max-width: 1023px) and (min-width: 768px) {
-  .polyclinic-services figure.long {
+  .polyclinic-services #long {
     width: 58% !important;
   }
-  .polyclinic-services figure {
+  .polyclinic-services .service {
     width: 28% !important;
   }
 }
@@ -1032,7 +1032,7 @@ ul {
   padding: 0px 40px;
 }
 
-.polyclinic-services figure.long a .service-image img {
+.polyclinic-services #long a .service-image img {
   width: 100%;
   -webkit-transition: all 0.6s linear 0s;
   transition: all 0.6s linear 0s;
@@ -1052,17 +1052,20 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
-.polyclinic-services figure {
+.polyclinic-services .service {
   width: 200px;
   height: 142px;
   margin: 0px 0px 20px 20px;
 }
 
-.polyclinic-services figure a {
+.polyclinic-services .service a {
   display: block;
   height: 142px;
   color: white;
@@ -1076,22 +1079,22 @@ ul {
   transition: all 0.2s linear 0s;
 }
 
-.polyclinic-services figure a strong {
+.polyclinic-services .service a strong {
   font-size: 17px;
   position: relative;
   font-family: "Gilroy-bold";
 }
 
-.polyclinic-services figure a:hover {
+.polyclinic-services .service a:hover {
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 14px 20px 0px;
           box-shadow: rgba(0, 0, 0, 0.3) 0px 14px 20px 0px;
 }
 
-.polyclinic-services figure a:hover::before {
+.polyclinic-services .service a:hover::before {
   opacity: 1;
 }
 
-.polyclinic-services figure a::before {
+.polyclinic-services .service a::before {
   content: "";
   display: block;
   width: 100%;
@@ -1103,13 +1106,13 @@ ul {
   transition: all 0.3s linear all;
 }
 
-.polyclinic-services figure a .service-image {
+.polyclinic-services .service a .service-image {
   display: block;
   height: 105px;
   position: relative;
 }
 
-.polyclinic-services figure a .service-image img {
+.polyclinic-services .service a .service-image img {
   display: block;
   position: absolute;
   top: 50%;

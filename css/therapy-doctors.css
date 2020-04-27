@@ -126,7 +126,7 @@ ul {
 }
 
 @media (max-width: 767px) and (min-width: 480px) {
-  .doctors-container figure {
+  .doctors-container .doctor {
     width: 45% !important;
   }
   .footer-container {
@@ -173,7 +173,7 @@ ul {
 }
 
 @media (max-width: 468px) {
-  .doctors-container figure {
+  .doctors-container .doctor {
     width: 93% !important;
   }
   .main-nav {
@@ -226,13 +226,13 @@ ul {
 }
 
 @media (max-width: 480px) {
-  .doctors-container figure {
+  .doctors-container .doctor {
     width: 93% !important;
   }
 }
 
 @media (max-width: 1023px) and (min-width: 768px) {
-  .doctors-container figure {
+  .doctors-container .doctor {
     width: 27% !important;
   }
 }
@@ -1148,25 +1148,25 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
-.doctors-container figure {
+.doctors-container .doctor {
   width: 17%;
   margin: 0 0 35px 22px;
   padding: 0 0 30px;
 }
 
-.doctors-container figure .image img {
+.doctors-container .doctor .image img {
   width: 100%;
   border-radius: 6px;
 }
 
-.doctors-container figure h4 {
+.doctors-container .doctor h4 {
   margin: 0;
   padding: 0 0 5px;
   font-size: 15px;
@@ -1176,7 +1176,7 @@ ul {
   font-family: "Gilroy-regular";
 }
 
-.doctors-container figure p {
+.doctors-container .doctor p {
   text-align: center;
   color: #7c7c7c;
   font-size: 15px;

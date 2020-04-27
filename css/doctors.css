@@ -126,7 +126,7 @@ ul {
 }
 
 @media (max-width: 767px) and (min-width: 480px) {
-  .doctors-container figure {
+  .doctors-container li {
     width: 44% !important;
   }
   .footer-container {
@@ -164,7 +164,7 @@ ul {
 }
 
 @media (max-width: 468px) {
-  .doctors-container figure {
+  .doctors-container li {
     width: 93% !important;
   }
   .main-nav {
@@ -217,13 +217,13 @@ ul {
 }
 
 @media (max-width: 480px) {
-  .doctors-container figure {
+  .doctors-container li {
     width: 93% !important;
   }
 }
 
 @media (max-width: 1023px) and (min-width: 768px) {
-  .doctors-container figure {
+  .doctors-container li {
     width: 28% !important;
   }
 }
@@ -983,6 +983,10 @@ ul {
   padding: 0px 0px 100px;
 }
 
+ul {
+  padding: 0;
+}
+
 .main-circles {
   width: 330px;
   height: 120%;
@@ -1090,30 +1094,37 @@ ul {
 
 .doctors-container .accordion .accordion-container {
   padding: 50px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
-.doctors-container figure {
-  display: inline-block;
+.accordion-container li {
   width: 19%;
   margin: 0 0 35px 22px;
   padding: 0 0 30px;
 }
 
-.doctors-container figure a {
+.accordion-containerli a {
   text-decoration: none;
 }
 
-.doctors-container figure .image {
+.accordion-container li .image {
   padding: 0 0 20px;
 }
 
-.doctors-container figure .image img {
+.accordion-container li .image img {
   display: block;
   width: 100%;
   border-radius: 6px;
 }
 
-.doctors-container figure h4 {
+.accordion-container li h4 {
   padding: 0 0 8px;
   font-size: 15px;
   text-align: center;
@@ -1121,7 +1132,7 @@ ul {
   font-family: "Gilroy-medium";
 }
 
-.doctors-container figure p {
+.accordion-container li p {
   text-align: center;
   color: #7c7c7c;
   font-size: 15px;

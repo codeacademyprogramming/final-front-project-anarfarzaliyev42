@@ -43,7 +43,7 @@
   }
 
   @media (min-width: 1024px) {
-    .branches-container figure{
+    .branches-container .branch{
       &:nth-child(3n) {
         margin: 0 0 100px;
       }
@@ -88,7 +88,7 @@
      
     }
    
-    .branches-container figure {
+    .branches-container .branch {
       margin-right: 0 !important;
       width:100% !important;
     }
@@ -107,7 +107,7 @@
       padding: 0 !important;
     }
     
-   .branches-container figure  {
+   .branches-container .branch  {
       width: 100% !important;
     margin: 0 0 80px !important;
     }
@@ -155,16 +155,16 @@
         display: none;
        
     }
-    .branches-container figure{
+    .branches-container .branch{
         width: 93% !important;
     }
   }
   @media (max-width: 1023px) and (min-width: 768px){
-    .branches-container figure:nth-child(2n) {
+    .branches-container .branch:nth-child(2n) {
       margin-right: 0 !important;
     }
  
-    .branches-container figure{
+    .branches-container .branch{
         width:  48% !important;
     }
   

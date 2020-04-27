@@ -81,7 +81,7 @@ animation-direction: alternate;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  figure {
+  .branch {
     &:hover {
       &::after {
         opacity: 0;
@@ -113,7 +113,7 @@ animation-direction: alternate;
 
       transition: all 0.2s linear;
     }
-    figcaption {
+    .branch-title {
       width: 96%;
       position: absolute;
       bottom: -39px;

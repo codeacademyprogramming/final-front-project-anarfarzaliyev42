@@ -93,7 +93,7 @@ let bool=false;
     }
   }
 
-  // Main li animation
+  // Main li animation 
   addMainLIAnime();
   setTimeout(function () {
     $(".main-left-container li").css({

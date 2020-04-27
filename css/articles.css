@@ -301,7 +301,7 @@ ul {
         -ms-flex-direction: column !important;
             flex-direction: column !important;
   }
-  .symptoms-sugg-container article {
+  .symptoms-sugg-container .article {
     width: 100% !important;
     margin: 40px 0 0 !important;
   }
@@ -332,7 +332,7 @@ ul {
   .article-container {
     width: 100% !important;
   }
-  .article-container article {
+  .article-container .article {
     width: 100% !important;
     margin: 0 0 25px !important;
   }
@@ -1094,22 +1094,22 @@ ul {
       flex-wrap: wrap;
 }
 
-.article-container article {
+.article-container .article {
   width: 30%;
   height: 315px;
   margin: 0 0 0 22px;
 }
 
-.article-container article .image {
+.article-container .article .image {
   padding: 0 0 15px;
 }
 
-.article-container article .image a img {
+.article-container .article .image a img {
   width: 100%;
   border-radius: 6px;
 }
 
-.article-container article h4 {
+.article-container .article h4 {
   padding: 0 0 17px;
   font-size: 16px;
   font-weight: 500;
@@ -1118,12 +1118,12 @@ ul {
   font-family: "Gilroy-medium";
 }
 
-.article-container article h4 a {
+.article-container .article h4 a {
   color: #404040;
   text-decoration: none;
 }
 
-.article-container article time {
+.article-container .article .time {
   font-size: 15px;
   color: #7c7c7c;
 }
@@ -1132,7 +1132,7 @@ h4 {
   margin: 0;
 }
 
-.article-container article:nth-child(3n-2) {
+.article-container .article:nth-child(3n-2) {
   margin: 0;
 }
 

@@ -1,26 +1,6 @@
 $(function () {
 
-  // $(document).on('mouseover','.man map area',function () {
-  //      let imageSoruce=$(this).attr('data-src');
-  //     $('#man').attr('src',`${imageSoruce}`);
-
-  // })
-  // $(document).on('mouseleave','.man map area',function () {
-
-  //     $('#man').attr('src','assets/images/man_empty.png');
-
-  // })
-  // $(document).on('mouseover','.woman map area',function () {
-  //      let imageSoruce=$(this).attr('data-src');
-  //     $('#woman').attr('src',`${imageSoruce}`);
-
-  // })
-  // $(document).on('mouseleave','.woman map area',function () {
-
-  //     $('#woman').attr('src','assets/images/man_empty.png');
-
-  // })
-
+    // Map area (Human body parts ) mouseover
   $(document).on("mouseover", "map area", function () {
     let imageSoruce = $(this).attr("data-src");
     let manOrWoman = $(this)
@@ -33,15 +13,17 @@ $(function () {
       $("#woman").attr("src", `${imageSoruce}`);
     }
   });
+  // Map area (Human body parts ) mouseleave
   $(document).on("mouseleave", "map area", function () {
     $("#man,#woman").attr("src", "assets/images/man_empty.png");
   });
+  //Map areas data-tag attributes written here
   let checkSymptoms = true;
   $(document).on("click", "map area", function (e) {
     e.preventDefault();
     let currentDataTag = $(this).attr("data-tag");
     let allDataTags = $(".data-tags a");
-    let allArticles=$('.symptoms-sugg-container article');
+    let allArticles=$('.symptoms-sugg-container .article');
     allArticles.each(function (index, element) {
       if ($(element).attr("data-tag") == currentDataTag) {
         $(element).show();
@@ -76,6 +58,7 @@ $(function () {
       checkSymptoms = true;
     }
   });
+  //Search button written here
   $(document).on("click", ".search-image-header .search", function (e) {
     e.preventDefault();
     let currentDataTag='default';
@@ -89,7 +72,7 @@ $(function () {
       }
     });
     //Articles
-    let allArticles=$('.symptoms-sugg-container article');
+    let allArticles=$('.symptoms-sugg-container .article');
     allArticles.each(function (index, element) {
   
         $(element).show();

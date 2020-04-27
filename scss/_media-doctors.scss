@@ -44,7 +44,7 @@
  
 }
 @media (max-width: 767px) and (min-width: 480px) {
-    .doctors-container figure {
+    .doctors-container li {
       width: 44% !important;
     }
  
@@ -84,7 +84,7 @@
   }
 }
 @media (max-width: 468px) {
-    .doctors-container figure {
+    .doctors-container li {
          width: 93% !important;
     }
  
@@ -137,14 +137,14 @@
      
 }
 @media (max-width: 480px){
-    .doctors-container figure {
+    .doctors-container li {
         width: 93% !important;
     }
     
     
 }
 @media (max-width: 1023px) and (min-width: 768px){
-    .doctors-container figure {
+    .doctors-container li {
         width: 28% !important;
     }
 }

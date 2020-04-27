@@ -127,7 +127,7 @@ ul {
 }
 
 @media (min-width: 1024px) {
-  .branches-container figure:nth-child(3n) {
+  .branches-container .branch:nth-child(3n) {
     margin: 0 0 100px;
   }
   .phone span {
@@ -162,7 +162,7 @@ ul {
     width: 80px !important;
     height: 92px !important;
   }
-  .branches-container figure {
+  .branches-container .branch {
     margin-right: 0 !important;
     width: 100% !important;
   }
@@ -184,7 +184,7 @@ ul {
   .main-content div {
     padding: 0 !important;
   }
-  .branches-container figure {
+  .branches-container .branch {
     width: 100% !important;
     margin: 0 0 80px !important;
   }
@@ -237,16 +237,16 @@ ul {
   .main-nav {
     display: none;
   }
-  .branches-container figure {
+  .branches-container .branch {
     width: 93% !important;
   }
 }
 
 @media (max-width: 1023px) and (min-width: 768px) {
-  .branches-container figure:nth-child(2n) {
+  .branches-container .branch:nth-child(2n) {
     margin-right: 0 !important;
   }
-  .branches-container figure {
+  .branches-container .branch {
     width: 48% !important;
   }
 }
@@ -1081,7 +1081,7 @@ ul {
           justify-content: center;
 }
 
-.branches-container figure {
+.branches-container .branch {
   width: 29%;
   margin: 0 22px 100px 0;
   position: relative;
@@ -1092,11 +1092,11 @@ ul {
   transition: all 0.2s linear;
 }
 
-.branches-container figure:hover::after {
+.branches-container .branch:hover::after {
   opacity: 0;
 }
 
-.branches-container figure::after {
+.branches-container .branch::after {
   content: "";
   display: block;
   width: 100%;
@@ -1111,7 +1111,7 @@ ul {
   transition: all 0.2s linear;
 }
 
-.branches-container figure figcaption {
+.branches-container .branch .branch-title {
   width: 96%;
   position: absolute;
   bottom: -39px;
@@ -1121,7 +1121,7 @@ ul {
   font-family: "Gilroy-bold";
 }
 
-.branches-container figure a {
+.branches-container .branch a {
   display: block;
   width: 100%;
   height: 100%;
@@ -1131,7 +1131,7 @@ ul {
   z-index: 2;
 }
 
-.branches-container figure img {
+.branches-container .branch img {
   display: block;
   width: 100%;
   border-radius: 6px;

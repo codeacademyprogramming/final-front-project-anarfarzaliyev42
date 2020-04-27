@@ -11,7 +11,9 @@
   padding: 0px 0px 100px;
 }
 
-
+ul{
+  padding: 0;
+}
 
 
 .main-circles {
@@ -85,6 +87,7 @@
 }
 .doctors-container .accordion {
     padding: 0 0 30px;
+   
 }
 .doctors-container .accordion h3 {
     padding: 0 0 0 22px;
@@ -121,28 +124,32 @@
 
 .doctors-container .accordion .accordion-container {
     padding: 50px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
-.doctors-container figure {
-    display: inline-block;
+.accordion-container li {
+   
     width: 19%;
     margin: 0 0 35px 22px;
     padding: 0 0 30px;
+    
  
 }
-.doctors-container figure a {
+.accordion-containerli a {
     text-decoration: none;
 }
-.doctors-container figure .image {
+.accordion-container li .image {
     padding: 0 0 20px;
 }
-.doctors-container figure .image img {
+.accordion-container li .image img {
     display: block;
     width: 100%;
     
     border-radius: 6px;
 }
 
-.doctors-container figure h4 {
+.accordion-container li h4 {
     padding: 0 0 8px;
     font-size: 15px;
 
@@ -150,7 +157,7 @@
     color: #159ee3;
     font-family: "Gilroy-medium";
 }
-.doctors-container figure p {
+.accordion-container li p {
     text-align: center;
     color: #7c7c7c;
     font-size: 15px;

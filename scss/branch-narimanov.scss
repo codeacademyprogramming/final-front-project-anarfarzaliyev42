@@ -284,7 +284,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
 }
-.polyclinic-services figure {
+.polyclinic-services .service {
   width: 208px;
   height: 142px;
 
@@ -343,14 +343,14 @@ ul {
     }
   }
 }
-.polyclinic-services figure.long {
+.polyclinic-services #long {
   width: 437px;
 }
 
 .polyclinic-services .dark-color a {
   background: rgb(0, 119, 179);
 }
-.polyclinic-services figure a::before {
+.polyclinic-services .service a::before {
   content: "";
   display: block;
   width: 100%;
@@ -420,7 +420,7 @@ ul {
   flex-wrap: wrap;
 }
 
-.doctors-container figure {
+.doctors-container .doctor {
 
   width: 22.3%;
   margin: 0 0 35px 22px;
@@ -430,14 +430,14 @@ ul {
 
 }
 
-.doctors-container figure .image img {
+.doctors-container .doctor .image img {
 
   width: 100%;
 
   border-radius: 6px;
 }
 
-.doctors-container figure h4 {
+.doctors-container .doctor h4 {
   margin: 0;
   padding: 0 0 5px;
   font-size: 15px;
@@ -450,7 +450,7 @@ ul {
     font-family: "Gilroy-regular";
 
 }
-.doctors-container figure p {
+.doctors-container .doctor p {
   text-align: center;
   color: #7c7c7c;
   font-size: 15px;

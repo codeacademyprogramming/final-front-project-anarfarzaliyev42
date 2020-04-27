@@ -42,6 +42,7 @@ $(function () {
       var key = theEvent.keyCode || theEvent.which;
       key = String.fromCharCode(key);
   }
+  // Check only number regex
   var regex = /[0-9]|\./;
   if( !regex.test(key) ) {
     theEvent.returnValue = false;

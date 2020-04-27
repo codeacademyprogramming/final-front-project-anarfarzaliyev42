@@ -118,7 +118,7 @@
 }
 .symptoms-sugg-container{
   flex-direction: column !important;
-  article{
+  .article{
       width: 100% !important;
  
     margin: 40px 0 0 !important;
@@ -149,7 +149,7 @@
   {
     width: 100% !important;
 
-    article{
+    .article{
       width: 100% !important;
       margin: 0 0 25px !important;
     }

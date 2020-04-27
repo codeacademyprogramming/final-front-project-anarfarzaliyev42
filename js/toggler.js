@@ -6,7 +6,7 @@ $(function () {
         $("#header").addClass('header-show');
         $('.header-show .toggler').addClass('toggler-active');
         $(".header-show .toggler span .line").addClass('toggler-line-active');
-        //$('.main-content').addClass('margin-top');
+  
         $('.toggler').addClass('active');
         setTimeout(function () {
           $('.toggler').addClass('active-second');
@@ -32,7 +32,7 @@ $(function () {
         $("#header").removeClass('header-show');
         $('.toggler').removeClass('toggler-active');
         $(".toggler span .line").removeClass('toggler-line-active');
-        //$('.main-content').removeClass('margin-top');
+      
      
         $('.toggler').removeClass('active-last');
         setTimeout(function () {
