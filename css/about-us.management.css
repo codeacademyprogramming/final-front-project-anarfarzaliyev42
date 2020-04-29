@@ -1067,6 +1067,7 @@ ul {
 }
 
 .internal-nav a {
+  white-space: nowrap;
   width: 25%;
   height: 58px;
   font-size: 18px;
