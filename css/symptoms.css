@@ -1393,7 +1393,7 @@ area {
   transition: all 0.2s linear;
 }
 
-.test-active {
+.toggler-container-active {
   width: 100% !important;
 }
 

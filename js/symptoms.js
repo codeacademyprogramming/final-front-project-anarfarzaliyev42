@@ -102,7 +102,7 @@ $(function () {
     e.preventDefault();
     $('.toggle-symptoms').toggleClass("toggle-symptoms-active");
     $('.toggler-opener').toggleClass("toggler-opener-active");
-    $('.toggler-container').toggleClass("test-active");
+    $('.toggler-container').toggleClass("toggler-container-active");
     
   })
   $(document).on("click",'.data-tags a, .toggle-symptoms-container a',function (e) {
