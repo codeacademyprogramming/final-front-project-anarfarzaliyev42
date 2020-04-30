@@ -70,6 +70,10 @@ ul {
   list-style: none;
 }
 
+input, button {
+  outline: none !important;
+}
+
 @media (max-width: 1024px) {
   #aside-nav {
     width: 75% !important;
