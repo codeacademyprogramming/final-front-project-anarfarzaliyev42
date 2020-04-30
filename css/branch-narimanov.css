@@ -92,6 +92,9 @@ ul {
 }
 
 @media (max-width: 1024px) {
+  .polyclinic-services {
+    margin: 0px 0px 0px -16px !important;
+  }
   .main-right {
     display: none !important;
   }
@@ -152,6 +155,9 @@ ul {
 }
 
 @media (max-width: 767px) {
+  .polyclinic-services {
+    margin: 0px 0px 0px -14px !important;
+  }
   .logo a {
     width: 80px !important;
     height: 92px !important;
@@ -251,6 +257,9 @@ ul {
 }
 
 @media (max-width: 479px) and (min-width: 240px) {
+  .polyclinic-services {
+    margin: 0px 0px 0px -2px !important;
+  }
   .wrapper {
     padding: 0px 0px 1px !important;
   }
@@ -269,10 +278,10 @@ ul {
 
 @media (max-width: 1023px) and (min-width: 768px) {
   .polyclinic-services .service {
-    width: 28% !important;
+    width: 30% !important;
   }
   .polyclinic-services #long {
-    width: 59% !important;
+    width: 62% !important;
   }
   .doctors-container .doctor {
     width: 28% !important;

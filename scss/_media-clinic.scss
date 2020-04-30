@@ -1,7 +1,10 @@
 @import 'media-aside-nav';
 @media (max-width: 1024px) {
 
+.polyclinic-services {
 
+    margin: 0px 0px 0px 11px !important;
+}
 #header > div .toggler {
     right: 20px !important;
 }
@@ -61,7 +64,9 @@
  
 }
 @media (max-width: 767px) {
-  
+  .polyclinic-services {
+    margin: 0px 0px 0px -8px !important;
+}
   .logo{
     a{
      width: 80px !important;
@@ -78,7 +83,7 @@
   }
 }
 @media (max-width: 468px) {
-  
+ 
   .main-nav {
     display: none;
     width: 100%;

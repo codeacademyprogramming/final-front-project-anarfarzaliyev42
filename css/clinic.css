@@ -92,6 +92,9 @@ ul {
 }
 
 @media (max-width: 1024px) {
+  .polyclinic-services {
+    margin: 0px 0px 0px 11px !important;
+  }
   #header > div .toggler {
     right: 20px !important;
   }
@@ -145,6 +148,9 @@ ul {
 }
 
 @media (max-width: 767px) {
+  .polyclinic-services {
+    margin: 0px 0px 0px -8px !important;
+  }
   .logo a {
     width: 80px !important;
     height: 92px !important;
@@ -1030,6 +1036,7 @@ ul {
 .content-container {
   margin: 0px auto;
   padding: 0px 40px;
+  max-width: 940px;
 }
 
 .polyclinic-services #long a .service-image img {
