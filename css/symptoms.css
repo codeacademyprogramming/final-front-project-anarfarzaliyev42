@@ -251,6 +251,21 @@ input, button {
 }
 
 @media (max-width: 479px) and (min-width: 240px) {
+  .paddingSide25 {
+    padding: 0px !important;
+  }
+  .toggler-container {
+    display: block !important;
+  }
+  .toggle-symptoms {
+    display: block !important;
+  }
+  .toggler-opener {
+    display: block !important;
+  }
+  .data-tags {
+    display: none !important;
+  }
   .footer-container {
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: normal !important;
@@ -1256,8 +1271,165 @@ area {
 .data-tags a[data-tag="stomach"],
 .data-tags a[data-tag="hands"],
 .data-tags a[data-tag="tuman"],
-.data-tags a[data-tag="legs"] {
+.data-tags a[data-tag="legs"],
+.data-tags a[data-tag="underwear"] {
   display: none;
+}
+
+.data-tags-link-active {
+  color: #0077b3 !important;
+  margin: 0 41px 15px 0 !important;
+  position: relative;
+}
+
+.data-tags-link-active::after {
+  content: "";
+  display: block;
+  width: 13px;
+  height: 13px;
+  background: url("../assets/images/remove_blue_icon.svg") no-repeat 0 0;
+  position: absolute;
+  top: 2px;
+  right: -20px;
+  opacity: 0.2;
+}
+
+.toggler-opener {
+  display: none;
+  background-image: linear-gradient(220deg, #18d0f8, #18a7ef);
+  -webkit-box-shadow: 0 0px 10px 0 rgba(21, 158, 227, 0.5);
+          box-shadow: 0 0px 10px 0 rgba(21, 158, 227, 0.5);
+  width: 58px;
+  height: 58px;
+  z-index: 1;
+  left: 0;
+  -webkit-box-shadow: 0 10px 20px 0 rgba(21, 158, 227, 0.5);
+          box-shadow: 0 10px 20px 0 rgba(21, 158, 227, 0.5);
+  position: absolute;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.toggler-opener span {
+  display: block;
+  width: 6px;
+  height: 6px;
+  background: #fff;
+  position: absolute;
+  top: calc(50% - 3px);
+  left: calc(50% - 3px);
+  border-radius: 6px;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.toggler-opener span::before {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: -12px;
+  border-radius: 6px;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.toggler-opener span::after {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 12px;
+  border-radius: 6px;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.toggle-symptoms {
+  display: none;
+  text-align: left;
+  width: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  position: absolute;
+  left: 0;
+  background: #fff;
+  -webkit-box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 8px 0;
+}
+
+.toggle-symptoms .toggle-symptoms-container {
+  width: calc(100vw - 105px);
+  padding: 20px 10px 10px;
+}
+
+.toggle-symptoms .toggle-symptoms-container a {
+  display: inline-block;
+  margin: 0 19px 15px 0;
+  font-size: 16px;
+  color: #5a5a5a;
+  text-decoration: underline;
+  position: relative;
+}
+
+.toggler-container {
+  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 0%;
+  top: -29px;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.test-active {
+  width: 100% !important;
+}
+
+.toggle-symptoms-active {
+  width: 87% !important;
+}
+
+.toggler-opener-active {
+  border-radius: 0 50% 50% 0 !important;
+  left: 86.5% !important;
+  -webkit-transition: all 0.3s linear !important;
+  transition: all 0.3s linear !important;
+}
+
+.toggler-opener-active span {
+  width: 32px;
+  height: 4px;
+  left: 12px;
+}
+
+.toggler-opener-active span::before {
+  width: 16px;
+  height: 4px;
+  left: 0px;
+  top: -4px;
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+}
+
+.toggler-opener-active span::after {
+  width: 16px;
+  height: 4px;
+  left: 0px;
+  top: 4px;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
 }
 
 .symptoms-sugg-container {

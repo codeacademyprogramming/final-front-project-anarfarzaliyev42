@@ -7,18 +7,6 @@
 
 
 
-.toggler{
-
-    background: white;
-
-    
-}
-
-.toggler span .line{
-  background: rgb(21, 158, 227);
- 
-}
-
 
 
 
@@ -473,4 +461,16 @@ transform: translateY(0px);
       }
     }
   }
+}
+
+.toggler{
+
+  background: white;
+
+  
+}
+
+.toggler span .line{
+background: rgb(21, 158, 227);
+
 }

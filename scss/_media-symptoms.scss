@@ -163,9 +163,21 @@
 }
 }
 @media (max-width: 479px) and (min-width: 240px) {
-  
-
- 
+  .paddingSide25 {
+    padding: 0px !important;
+}
+  .toggler-container{
+    display: block !important;
+  }
+  .toggle-symptoms{
+    display: block !important;
+  }
+  .toggler-opener{
+    display: block !important;
+  }
+  .data-tags{
+    display: none !important;
+  }
   .footer-container {
     flex-direction: column !important;
   }

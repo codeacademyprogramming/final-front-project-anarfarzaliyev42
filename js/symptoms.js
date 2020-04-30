@@ -65,7 +65,7 @@ $(function () {
     // Links
     let allDataTags = $(".data-tags a");
     allDataTags.each(function (index, element) {
-      if ($(element).attr("data-tag") == currentDataTag) {
+      if ($(element).attr("class") =="default") {
         $(element).show();
       } else {
         $(element).hide();
@@ -97,4 +97,35 @@ $(function () {
       checkSymptoms = true;
     }
   });
+  // Phone screen toggler
+  $(document).on('click','.toggler-opener',function (e) {
+    e.preventDefault();
+    $('.toggle-symptoms').toggleClass("toggle-symptoms-active");
+    $('.toggler-opener').toggleClass("toggler-opener-active");
+    $('.toggler-container').toggleClass("test-active");
+    
+  })
+  $(document).on("click",'.data-tags a, .toggle-symptoms-container a',function (e) {
+    e.preventDefault();
+
+    $(this).toggleClass("data-tags-link-active");
+    let currentTag=$(this).attr("data-tag");
+    console.log(currentTag);
+    
+    let allArticles=$('.symptoms-sugg-container .article');
+    allArticles.each(function (index,element) {
+      if($(element).attr('data-tag')==currentTag){
+        $(element).show();
+      }
+      else{
+        $(element).hide();
+      }
+    })
+
+    
+    
+    
+
+  })
+ 
 });
