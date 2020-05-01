@@ -110,7 +110,7 @@ $(function () {
 
     $(this).toggleClass("data-tags-link-active");
     let currentTag=$(this).attr("data-tag");
-    console.log(currentTag);
+ 
     
     let allArticles=$('.symptoms-sugg-container .article');
     allArticles.each(function (index,element) {
