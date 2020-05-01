@@ -181,6 +181,9 @@ input, button {
 }
 
 @media (max-width: 767px) {
+  .data-tags .default {
+    display: inline-block !important;
+  }
   .logo a {
     width: 80px !important;
     height: 92px !important;
@@ -1317,8 +1320,8 @@ area {
   height: 6px;
   background: #fff;
   position: absolute;
-  top: calc(50% - 3px);
-  left: calc(50% - 3px);
+  top: 46%;
+  left: 45%;
   border-radius: 6px;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
@@ -1368,13 +1371,15 @@ area {
 }
 
 .toggle-symptoms .toggle-symptoms-container {
-  width: calc(100vw - 105px);
+  width: 95%;
   padding: 20px 10px 10px;
+  overflow: hidden;
+  max-height: 167px;
 }
 
 .toggle-symptoms .toggle-symptoms-container a {
   display: inline-block;
-  margin: 0 19px 15px 0;
+  margin: 0 9px 12px 0;
   font-size: 16px;
   color: #5a5a5a;
   text-decoration: underline;

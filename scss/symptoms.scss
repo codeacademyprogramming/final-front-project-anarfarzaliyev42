@@ -268,8 +268,9 @@ area {
     height: 6px;
     background: #fff;
     position: absolute;
-    top: calc(50% - 3px);
-    left: calc(50% - 3px);
+    top: 46%;
+    left: 45%;
+
   
     border-radius: 6px;
     
@@ -321,11 +322,13 @@ box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.1);
 
 border-radius: 0 0 8px 0;
   .toggle-symptoms-container{
-    width: calc(100vw - 105px);
+    width: 95%;
     padding: 20px 10px 10px;
+    overflow: hidden;
+    max-height: 167px;
     a {
       display: inline-block;
-      margin: 0 19px 15px 0;
+      margin: 0 9px 12px 0;
       font-size: 16px;
       color: #5a5a5a;
       text-decoration: underline;

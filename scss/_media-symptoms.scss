@@ -90,6 +90,9 @@
  
 }
 @media (max-width: 767px) {
+  .data-tags .default{
+    display: inline-block !important;
+  }
    .logo{
    a{
     width: 80px !important;
